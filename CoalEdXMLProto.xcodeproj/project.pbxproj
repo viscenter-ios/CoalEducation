@@ -1,0 +1,292 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EF1ED32014C8981800469D9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1ED31F14C8981800469D9E /* UIKit.framework */; };
+		EF1ED32214C8981800469D9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1ED32114C8981800469D9E /* Foundation.framework */; };
+		EF1ED32414C8981800469D9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1ED32314C8981800469D9E /* CoreGraphics.framework */; };
+		EF1ED32A14C8981800469D9E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EF1ED32814C8981800469D9E /* InfoPlist.strings */; };
+		EF1ED32C14C8981800469D9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1ED32B14C8981800469D9E /* main.m */; };
+		EF1ED33014C8981800469D9E /* CoalEdXMLProtoAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1ED32F14C8981800469D9E /* CoalEdXMLProtoAppDelegate.m */; };
+		EF1ED33314C8981800469D9E /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1ED33114C8981800469D9E /* MainStoryboard_iPhone.storyboard */; };
+		EF1ED33614C8981800469D9E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF1ED33414C8981800469D9E /* MainStoryboard_iPad.storyboard */; };
+		EF1ED33914C8981800469D9E /* CoalEdXMLProtoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1ED33814C8981800469D9E /* CoalEdXMLProtoViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EF1ED31B14C8981800469D9E /* CoalEdXMLProto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoalEdXMLProto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1ED31F14C8981800469D9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		EF1ED32114C8981800469D9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		EF1ED32314C8981800469D9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		EF1ED32714C8981800469D9E /* CoalEdXMLProto-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoalEdXMLProto-Info.plist"; sourceTree = "<group>"; };
+		EF1ED32914C8981800469D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		EF1ED32B14C8981800469D9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EF1ED32D14C8981800469D9E /* CoalEdXMLProto-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoalEdXMLProto-Prefix.pch"; sourceTree = "<group>"; };
+		EF1ED32E14C8981800469D9E /* CoalEdXMLProtoAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoalEdXMLProtoAppDelegate.h; sourceTree = "<group>"; };
+		EF1ED32F14C8981800469D9E /* CoalEdXMLProtoAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoalEdXMLProtoAppDelegate.m; sourceTree = "<group>"; };
+		EF1ED33214C8981800469D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		EF1ED33514C8981800469D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		EF1ED33714C8981800469D9E /* CoalEdXMLProtoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoalEdXMLProtoViewController.h; sourceTree = "<group>"; };
+		EF1ED33814C8981800469D9E /* CoalEdXMLProtoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoalEdXMLProtoViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EF1ED31814C8981800469D9E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1ED32014C8981800469D9E /* UIKit.framework in Frameworks */,
+				EF1ED32214C8981800469D9E /* Foundation.framework in Frameworks */,
+				EF1ED32414C8981800469D9E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EF1ED31014C8981800469D9E = {
+			isa = PBXGroup;
+			children = (
+				EF1ED32514C8981800469D9E /* CoalEdXMLProto */,
+				EF1ED31E14C8981800469D9E /* Frameworks */,
+				EF1ED31C14C8981800469D9E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EF1ED31C14C8981800469D9E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EF1ED31B14C8981800469D9E /* CoalEdXMLProto.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EF1ED31E14C8981800469D9E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF1ED31F14C8981800469D9E /* UIKit.framework */,
+				EF1ED32114C8981800469D9E /* Foundation.framework */,
+				EF1ED32314C8981800469D9E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF1ED32514C8981800469D9E /* CoalEdXMLProto */ = {
+			isa = PBXGroup;
+			children = (
+				EF1ED32E14C8981800469D9E /* CoalEdXMLProtoAppDelegate.h */,
+				EF1ED32F14C8981800469D9E /* CoalEdXMLProtoAppDelegate.m */,
+				EF1ED33114C8981800469D9E /* MainStoryboard_iPhone.storyboard */,
+				EF1ED33414C8981800469D9E /* MainStoryboard_iPad.storyboard */,
+				EF1ED33714C8981800469D9E /* CoalEdXMLProtoViewController.h */,
+				EF1ED33814C8981800469D9E /* CoalEdXMLProtoViewController.m */,
+				EF1ED32614C8981800469D9E /* Supporting Files */,
+			);
+			path = CoalEdXMLProto;
+			sourceTree = "<group>";
+		};
+		EF1ED32614C8981800469D9E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EF1ED32714C8981800469D9E /* CoalEdXMLProto-Info.plist */,
+				EF1ED32814C8981800469D9E /* InfoPlist.strings */,
+				EF1ED32B14C8981800469D9E /* main.m */,
+				EF1ED32D14C8981800469D9E /* CoalEdXMLProto-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EF1ED31A14C8981800469D9E /* CoalEdXMLProto */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF1ED33C14C8981800469D9E /* Build configuration list for PBXNativeTarget "CoalEdXMLProto" */;
+			buildPhases = (
+				EF1ED31714C8981800469D9E /* Sources */,
+				EF1ED31814C8981800469D9E /* Frameworks */,
+				EF1ED31914C8981800469D9E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CoalEdXMLProto;
+			productName = CoalEdXMLProto;
+			productReference = EF1ED31B14C8981800469D9E /* CoalEdXMLProto.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EF1ED31214C8981800469D9E /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = EF1ED31514C8981800469D9E /* Build configuration list for PBXProject "CoalEdXMLProto" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = EF1ED31014C8981800469D9E;
+			productRefGroup = EF1ED31C14C8981800469D9E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EF1ED31A14C8981800469D9E /* CoalEdXMLProto */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EF1ED31914C8981800469D9E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1ED32A14C8981800469D9E /* InfoPlist.strings in Resources */,
+				EF1ED33314C8981800469D9E /* MainStoryboard_iPhone.storyboard in Resources */,
+				EF1ED33614C8981800469D9E /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EF1ED31714C8981800469D9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF1ED32C14C8981800469D9E /* main.m in Sources */,
+				EF1ED33014C8981800469D9E /* CoalEdXMLProtoAppDelegate.m in Sources */,
+				EF1ED33914C8981800469D9E /* CoalEdXMLProtoViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EF1ED32814C8981800469D9E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1ED32914C8981800469D9E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		EF1ED33114C8981800469D9E /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1ED33214C8981800469D9E /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		EF1ED33414C8981800469D9E /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EF1ED33514C8981800469D9E /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EF1ED33A14C8981800469D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EF1ED33B14C8981800469D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EF1ED33D14C8981800469D9E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoalEdXMLProto/CoalEdXMLProto-Prefix.pch";
+				INFOPLIST_FILE = "CoalEdXMLProto/CoalEdXMLProto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		EF1ED33E14C8981800469D9E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoalEdXMLProto/CoalEdXMLProto-Prefix.pch";
+				INFOPLIST_FILE = "CoalEdXMLProto/CoalEdXMLProto-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF1ED31514C8981800469D9E /* Build configuration list for PBXProject "CoalEdXMLProto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1ED33A14C8981800469D9E /* Debug */,
+				EF1ED33B14C8981800469D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EF1ED33C14C8981800469D9E /* Build configuration list for PBXNativeTarget "CoalEdXMLProto" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EF1ED33D14C8981800469D9E /* Debug */,
+				EF1ED33E14C8981800469D9E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EF1ED31214C8981800469D9E /* Project object */;
+}
