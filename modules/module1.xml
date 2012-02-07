@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<module>
+    <title>Module 1</title>
+    <thumbnail>./thumbs/thumb1.jpg</thumbnail>
+    <content>
+        <thumbnail>./thumbs/thumb2.jpg</thumbnail>
+        <video>
+            <url>http://www.youtube.com/ewar1213</url>
+            <info>This video is about coal.</info>    
+        </video>
+        <text>
+            Text describing the selected content in more detail.
+        </text>
+    </content>
+    <content>
+        <thumbnail>./thumbs/thumb3.jpg</thumbnail>
+        <video>
+            <url>http://www.youtube.com/ewar1213</url>
+            <info>This video is about coal.</info>    
+        </video>
+        <text>
+            Text describing the selected content in more detail.
+        </text>
+    </content>
+</module>

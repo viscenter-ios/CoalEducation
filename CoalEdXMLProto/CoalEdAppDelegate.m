@@ -6,7 +6,7 @@
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CoalEdXMLProtoAppDelegate.h"
+#import "CoalEdAppDelegate.h"
 
 @implementation CoalEdXMLProtoAppDelegate
 

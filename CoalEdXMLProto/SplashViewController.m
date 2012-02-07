@@ -6,9 +6,9 @@
 //  Copyright 2012 __MyCompanyName__. All rights reserved.
 //
 
-#import "CoalEdXMLProtoViewController.h"
+#import "SplashViewController.h"
 
-@implementation CoalEdXMLProtoViewController
+@implementation SplashViewController
 
 - (void)didReceiveMemoryWarning
 {

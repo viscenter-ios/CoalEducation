@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:CoalEdXMLProto.xcodeproj">
+      location = "self:CoalEd.xcodeproj">
    </FileRef>
 </Workspace>
