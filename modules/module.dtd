@@ -3,9 +3,9 @@
 [
 <!ELEMENT module (title,thumbnail,content+,)>
 <!ELEMENT title (#PCDATA)>
-<!ELEMENT mthumbnail (#PCDATA)>
+<!ELEMENT thumbnail (#PCDATA)>
 <!ELEMENT content (thumbnail,text,video?)>
-<!ELEMENT cthumbnail (#PCDATA)>
+<!ELEMENT thumbnail (#PCDATA)>
 <!ELEMENT text (#PCDATA)>
 <!ELEMENT video (url,info?)>
 <!ELEMENT url (#PCDATA)>

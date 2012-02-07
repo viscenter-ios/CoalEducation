@@ -31,6 +31,7 @@
 		27F7F91A14E18FED00F4AAF8 /* 5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 27F7F91314E18FED00F4AAF8 /* 5.jpeg */; };
 		27F7F91B14E18FED00F4AAF8 /* 6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 27F7F91414E18FED00F4AAF8 /* 6.jpeg */; };
 		27F7F91C14E18FED00F4AAF8 /* 7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 27F7F91514E18FED00F4AAF8 /* 7.jpeg */; };
+		27F7F91E14E1930C00F4AAF8 /* modules.xml in Resources */ = {isa = PBXBuildFile; fileRef = 27F7F91D14E1930C00F4AAF8 /* modules.xml */; };
 		EF1ED32014C8981800469D9E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1ED31F14C8981800469D9E /* UIKit.framework */; };
 		EF1ED32214C8981800469D9E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1ED32114C8981800469D9E /* Foundation.framework */; };
 		EF1ED32414C8981800469D9E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF1ED32314C8981800469D9E /* CoreGraphics.framework */; };
@@ -83,14 +84,15 @@
 		27F7F91314E18FED00F4AAF8 /* 5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 5.jpeg; path = thumbs/5.jpeg; sourceTree = SOURCE_ROOT; };
 		27F7F91414E18FED00F4AAF8 /* 6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 6.jpeg; path = thumbs/6.jpeg; sourceTree = SOURCE_ROOT; };
 		27F7F91514E18FED00F4AAF8 /* 7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 7.jpeg; path = thumbs/7.jpeg; sourceTree = SOURCE_ROOT; };
+		27F7F91D14E1930C00F4AAF8 /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = modules.xml; path = modules/modules.xml; sourceTree = SOURCE_ROOT; };
 		EF1ED31B14C8981800469D9E /* CoalEd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoalEd.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1ED31F14C8981800469D9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EF1ED32114C8981800469D9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF1ED32314C8981800469D9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		EF1ED32714C8981800469D9E /* CoalEd-Info.plist */ = {isa = PBXFileReference; path = "CoalEd-Info.plist"; sourceTree = "<group>"; };
+		EF1ED32714C8981800469D9E /* CoalEd-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CoalEd-Info.plist"; sourceTree = "<group>"; };
 		EF1ED32914C8981800469D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		EF1ED32B14C8981800469D9E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		EF1ED32D14C8981800469D9E /* CoalEd-Prefix.pch */ = {isa = PBXFileReference; path = "CoalEd-Prefix.pch"; sourceTree = "<group>"; };
+		EF1ED32D14C8981800469D9E /* CoalEd-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoalEd-Prefix.pch"; sourceTree = "<group>"; };
 		EF1ED32E14C8981800469D9E /* CoalEdAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoalEdAppDelegate.h; sourceTree = "<group>"; };
 		EF1ED32F14C8981800469D9E /* CoalEdAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoalEdAppDelegate.m; sourceTree = "<group>"; };
 		EF1ED33214C8981800469D9E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				27F7F90A14E18EBD00F4AAF8 /* module1.xml */,
 				27F7F90C14E18F0800F4AAF8 /* module.dtd */,
+				27F7F91D14E1930C00F4AAF8 /* modules.xml */,
 			);
 			name = modules;
 			sourceTree = "<group>";
@@ -308,6 +311,7 @@
 				27F7F91A14E18FED00F4AAF8 /* 5.jpeg in Resources */,
 				27F7F91B14E18FED00F4AAF8 /* 6.jpeg in Resources */,
 				27F7F91C14E18FED00F4AAF8 /* 7.jpeg in Resources */,
+				27F7F91E14E1930C00F4AAF8 /* modules.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,9 +423,12 @@
 		EF1ED33D14C8981800469D9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoalEdXMLProto/CoalEd-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CoalEdXMLProto/CoalEd-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = CoalEd;
 				WRAPPER_EXTENSION = app;
 			};
@@ -430,9 +437,12 @@
 		EF1ED33E14C8981800469D9E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoalEdXMLProto/CoalEd-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CoalEdXMLProto/CoalEd-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = CoalEd;
 				WRAPPER_EXTENSION = app;
 			};

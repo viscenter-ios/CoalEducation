@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<modules>
+    <module>
+        <title>Module 1</title>
+        <mthumbnail>1.jpeg</mthumbnail>
+    </module>
+    <module>
+        <title>Module 2</title>
+        <mthumbnail>2.jpeg</mthumbnail>
+    </module>
+    <module>
+        <title>Module 3</title>
+        <mthumbnail>3.jpeg</mthumbnail>
+    </module>
+    <module>
+        <title>Module 4</title>
+        <mthumbnail>4.jpeg</mthumbnail>
+    </module>
+    <module>
+        <title>Module 5</title>
+        <mthumbnail>5.jpeg</mthumbnail>
+    </module>
+    <module>
+        <title>Module 6</title>
+        <mthumbnail>6.jpeg</mthumbnail>
+    </module>
+    <module>
+        <title>Module 7</title>
+        <mthumbnail>7.jpeg</mthumbnail>
+    </module>
+</modules>
