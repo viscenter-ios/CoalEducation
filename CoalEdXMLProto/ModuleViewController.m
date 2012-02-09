@@ -55,6 +55,7 @@
     [webContent loadHTMLString:finalHTML baseURL:nil];
     [textContent sizeToFit];
     [scrollContent setContentSize:CGSizeMake(900, [scrollContent frame].size.height)];
+    [[webContent scrollView] setBounces:NO]; 
 }
 
 

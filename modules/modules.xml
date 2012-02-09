@@ -2,30 +2,37 @@
 <modules>
     <module>
         <title>Module 1</title>
-        <mthumbnail>1.jpeg</mthumbnail>
+        <thumbnail>1.jpeg</thumbnail>
+        <file>module1.xml</file>
     </module>
     <module>
         <title>Module 2</title>
-        <mthumbnail>2.jpeg</mthumbnail>
+        <thumbnail>2.jpeg</thumbnail>
+        <file>module2.xml</file>
     </module>
     <module>
         <title>Module 3</title>
-        <mthumbnail>3.jpeg</mthumbnail>
+        <thumbnail>3.jpeg</thumbnail>
+        <file>module3.xml</file>
     </module>
     <module>
         <title>Module 4</title>
-        <mthumbnail>4.jpeg</mthumbnail>
+        <thumbnail>4.jpeg</thumbnail>
+        <file>module4.xml</file>
     </module>
     <module>
         <title>Module 5</title>
-        <mthumbnail>5.jpeg</mthumbnail>
+        <thumbnail>5.jpeg</thumbnail>
+        <file>module5.xml</file>
     </module>
     <module>
         <title>Module 6</title>
-        <mthumbnail>6.jpeg</mthumbnail>
+        <thumbnail>6.jpeg</thumbnail>
+        <file>module6.xml</file>
     </module>
     <module>
         <title>Module 7</title>
-        <mthumbnail>7.jpeg</mthumbnail>
+        <thumbnail>7.jpeg</thumbnail>
+        <file>module7.xml</file>
     </module>
 </modules>
