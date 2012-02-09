@@ -8,7 +8,7 @@
 
 #import "CoalEdAppDelegate.h"
 
-@implementation CoalEdXMLProtoAppDelegate
+@implementation CoalEdAppDelegate
 
 @synthesize window = _window;
 

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CoalEdXMLProtoAppDelegate : UIResponder <UIApplicationDelegate>
+@interface CoalEdAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
