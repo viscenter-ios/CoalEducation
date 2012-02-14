@@ -233,7 +233,7 @@
 				EF1ED32614C8981800469D9E /* Supporting Files */,
 			);
 			name = CoalEd;
-			path = CoalEdXMLProto;
+			path = CoalEd;
 			sourceTree = "<group>";
 		};
 		EF1ED32614C8981800469D9E /* Supporting Files */ = {
@@ -265,7 +265,7 @@
 			dependencies = (
 			);
 			name = CoalEd;
-			productName = CoalEdXMLProto;
+			productName = CoalEd;
 			productReference = EF1ED31B14C8981800469D9E /* CoalEd.app */;
 			productType = "com.apple.product-type.application";
 		};
@@ -425,9 +425,9 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoalEdXMLProto/CoalEd-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoalEd/CoalEd-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				INFOPLIST_FILE = "CoalEdXMLProto/CoalEd-Info.plist";
+				INFOPLIST_FILE = "CoalEd/CoalEd-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = CoalEd;
 				WRAPPER_EXTENSION = app;
@@ -439,9 +439,9 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "CoalEdXMLProto/CoalEd-Prefix.pch";
+				GCC_PREFIX_HEADER = "CoalEd/CoalEd-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
-				INFOPLIST_FILE = "CoalEdXMLProto/CoalEd-Info.plist";
+				INFOPLIST_FILE = "CoalEd/CoalEd-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = CoalEd;
 				WRAPPER_EXTENSION = app;

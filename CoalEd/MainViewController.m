@@ -111,17 +111,18 @@
         return;
     }
     
-    int margin  = 40,
-        bWidth  = 128,
+    int bWidth  = 128,
         bHeight = 128,
         sWidth  = [[UIScreen mainScreen] bounds].size.width,
-        sHeight = [[UIScreen mainScreen] bounds].size.height;
+        sHeight = [[UIScreen mainScreen] bounds].size.height,
+        xMargin = (sWidth-3*bWidth)/4,
+        yMargin = (sHeight-3*bHeight)/(3+1); // TODO: Fix this to be based off [modules count]
     for(int i=0; i<[modules count]; i++)
     {
-        int c = i%(3),
+        int c = i%3,
             r = i/3,
-            x = c*(margin+bWidth)+margin,
-            y = r*(margin+bHeight)+margin;
+            x = c*(xMargin+bWidth)+xMargin,
+            y = r*(yMargin+bHeight)+yMargin;
         UIButton *button = [[UIButton alloc] initWithFrame:
                             CGRectMake(x, y, bWidth, bHeight)];
         [button setImage:[UIImage imageNamed:[[modules objectAtIndex:i] objectForKey:@"thumbnail"]]
