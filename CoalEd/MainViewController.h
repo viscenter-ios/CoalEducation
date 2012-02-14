@@ -16,5 +16,6 @@
 
 -(void) loadModules:(NSString *)XMLFilePath;
 -(void) createButtons;
+-(IBAction) buttonPressed:(id)sender;
 
 @end

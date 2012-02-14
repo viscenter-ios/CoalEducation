@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "ModuleViewController.h"
 
 @implementation MainViewController
 
@@ -106,19 +107,20 @@
 -(void) createButtons {
     
     // Make sure we have loaded modules
-    if(!modules || [modules count] == 0)
-    {
+    if(!modules || [modules count] == 0) {
         return;
     }
     
+    // Generate the positions of the buttons
     int bWidth  = 128,
         bHeight = 128,
         sWidth  = [[UIScreen mainScreen] bounds].size.width,
         sHeight = [[UIScreen mainScreen] bounds].size.height,
         xMargin = (sWidth-3*bWidth)/4,
         yMargin = (sHeight-3*bHeight)/(3+1); // TODO: Fix this to be based off [modules count]
-    for(int i=0; i<[modules count]; i++)
-    {
+    
+    // Create the buttons
+    for(int i=0; i<[modules count]; i++) {
         int c = i%3,
             r = i/3,
             x = c*(xMargin+bWidth)+xMargin,
@@ -127,10 +129,30 @@
                             CGRectMake(x, y, bWidth, bHeight)];
         [button setImage:[UIImage imageNamed:[[modules objectAtIndex:i] objectForKey:@"thumbnail"]]
                 forState:UIControlStateNormal];
+        
+        // Set the tag for module access later
+        // NOTE: this may have an issue with 0
+        [button setTag:i];
+        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         [[self view] addSubview:button];
     }
+}
+
+
+-(IBAction) buttonPressed:(id)sender {
     
+    [self performSegueWithIdentifier:@"toModule" sender:sender];
+}
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
+    // Make sure we are performing the right segue
+    if([[segue identifier] isEqualToString:@"toModule"]) {
+        ModuleViewController *mv = [segue destinationViewController];
+        int tagIndex = [(UIButton *)sender tag];
+        
+        // TODO: Add Module initialization code here
+    }
 }
 
 @end

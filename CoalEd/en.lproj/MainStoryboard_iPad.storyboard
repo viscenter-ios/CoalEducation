@@ -50,6 +50,9 @@
                         <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="A9S-1r-wGC"/>
+                    <connections>
+                        <segue destination="ZaF-hG-Sno" kind="push" identifier="toModule" id="Xyc-V4-8a2"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2154" y="-167"/>
@@ -176,6 +179,25 @@
             <point key="canvasLocation" x="45" y="-167"/>
         </scene>
     </scenes>
+    <classes>
+        <class className="MainViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MainViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="buttonPressed:"/>
+            </relationships>
+        </class>
+        <class className="ModuleViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ModuleViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="scrollContent" candidateClass="UIScrollView"/>
+                <relationship kind="outlet" name="textContent" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="webContent" candidateClass="UIWebView"/>
+            </relationships>
+        </class>
+        <class className="SplashViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SplashViewController.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
