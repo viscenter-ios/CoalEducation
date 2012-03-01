@@ -7,14 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "TouchXML.h"
 
 @interface MainViewController : UIViewController {
-    NSMutableArray *modules;
+    NSMutableArray *moduleXMLList;
+    NSMutableArray *moduleVCList;
 }
 
 
--(void) loadModules:(NSString *)XMLFilePath;
+-(void) loadModules:(NSString *)xmlFile;
 -(void) createButtons;
 -(IBAction) buttonPressed:(id)sender;
 

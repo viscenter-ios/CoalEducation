@@ -9,13 +9,19 @@
 #import <UIKit/UIKit.h>
 
 @interface ModuleViewController : UIViewController {
-    IBOutlet UIWebView    *webContent;
-    IBOutlet UILabel      *textContent;
-    IBOutlet UIScrollView *scrollContent;
+    UIWebView    *webContent;
+    UILabel      *textContent;
+    UIScrollView *scrollContent;
+
+    NSMutableArray *xmlData;
+    NSMutableArray *content;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webContent;
 @property (nonatomic, retain) IBOutlet UILabel *textContent;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollContent;
 
+- (id)initWithXMLName:(NSString *)xmlName;
+- (void)loadXML:(NSString *)xmlFile;
+- (void)processXML;
 @end

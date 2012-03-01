@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		277307DA14F69E3900291ADB /* ContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 277307D914F69E3900291ADB /* ContentItem.m */; };
 		27A6A3A614D8696500E77608 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6A3A414D8696500E77608 /* MainViewController.m */; };
 		27E10CD614DAE76A00A52BCB /* ModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E10CD514DAE76A00A52BCB /* ModuleViewController.m */; };
+		27F55B9814ED5E92003A1108 /* ModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F55B9714ED5E92003A1108 /* ModuleViewController.xib */; };
 		27F7F8FA14E18BBC00F4AAF8 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F7F8DF14E18BBC00F4AAF8 /* CXMLDocument_CreationExtensions.m */; };
 		27F7F8FB14E18BBC00F4AAF8 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F7F8E114E18BBC00F4AAF8 /* CXMLNode_CreationExtensions.m */; };
 		27F7F8FC14E18BBC00F4AAF8 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F7F8E314E18BBC00F4AAF8 /* CXHTMLDocument.m */; };
@@ -44,10 +46,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		277307D914F69E3900291ADB /* ContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
 		27A6A3A314D8696500E77608 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		27A6A3A414D8696500E77608 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		27D84AB714F697D50004CD8E /* ContentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentItem.h; sourceTree = "<group>"; };
 		27E10CD414DAE76A00A52BCB /* ModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleViewController.h; sourceTree = "<group>"; };
 		27E10CD514DAE76A00A52BCB /* ModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleViewController.m; sourceTree = "<group>"; };
+		27F55B9714ED5E92003A1108 /* ModuleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModuleViewController.xib; sourceTree = "<group>"; };
 		27F7F8DE14E18BBC00F4AAF8 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
 		27F7F8DF14E18BBC00F4AAF8 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
 		27F7F8E014E18BBC00F4AAF8 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
@@ -224,15 +229,17 @@
 				EF1ED32F14C8981800469D9E /* CoalEdAppDelegate.m */,
 				EF1ED33114C8981800469D9E /* MainStoryboard_iPhone.storyboard */,
 				EF1ED33414C8981800469D9E /* MainStoryboard_iPad.storyboard */,
+				27D84AB714F697D50004CD8E /* ContentItem.h */,
+				277307D914F69E3900291ADB /* ContentItem.m */,
 				27E10CD414DAE76A00A52BCB /* ModuleViewController.h */,
 				27E10CD514DAE76A00A52BCB /* ModuleViewController.m */,
+				27F55B9714ED5E92003A1108 /* ModuleViewController.xib */,
 				27A6A3A314D8696500E77608 /* MainViewController.h */,
 				27A6A3A414D8696500E77608 /* MainViewController.m */,
 				EF1ED33714C8981800469D9E /* SplashViewController.h */,
 				EF1ED33814C8981800469D9E /* SplashViewController.m */,
 				EF1ED32614C8981800469D9E /* Supporting Files */,
 			);
-			name = CoalEd;
 			path = CoalEd;
 			sourceTree = "<group>";
 		};
@@ -312,6 +319,7 @@
 				27F7F91B14E18FED00F4AAF8 /* 6.jpeg in Resources */,
 				27F7F91C14E18FED00F4AAF8 /* 7.jpeg in Resources */,
 				27F7F91E14E1930C00F4AAF8 /* modules.xml in Resources */,
+				27F55B9814ED5E92003A1108 /* ModuleViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +348,7 @@
 				27F7F90414E18BBC00F4AAF8 /* CXMLNode_PrivateExtensions.m in Sources */,
 				27F7F90514E18BBC00F4AAF8 /* CXMLNode_XPathExtensions.m in Sources */,
 				27F7F90614E18BBC00F4AAF8 /* CTidy.m in Sources */,
+				277307DA14F69E3900291ADB /* ContentItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

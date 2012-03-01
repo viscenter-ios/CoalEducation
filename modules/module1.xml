@@ -4,20 +4,14 @@
     <thumbnail>./thumbs/thumb1.jpg</thumbnail>
     <content>
         <thumbnail>./thumbs/thumb2.jpg</thumbnail>
-        <video>
-            <url>http://www.youtube.com/ewar1213</url>
-            <info>This video is about coal.</info>    
-        </video>
+        <htmlFile>1.1.html</htmlFile>
         <text>
             Text describing the selected content in more detail.
         </text>
     </content>
     <content>
-        <thumbnail>./thumbs/thumb3.jpg</thumbnail>
-        <video>
-            <url>http://www.youtube.com/ewar1213</url>
-            <info>This video is about coal.</info>    
-        </video>
+        <thumbnail>./thumbs/thumb2.jpg</thumbnail>
+        <htmlFile>1.2.html</htmlFile>
         <text>
             Text describing the selected content in more detail.
         </text>

@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "ModuleViewController.h"
+#import "TouchXML.h"
 
 @implementation MainViewController
 
@@ -69,13 +70,14 @@
 }
 
 // loadModules function that takes a string (XMLFilePath) as a parameter and
-// fills the global modules array with the entries
--(void) loadModules:(NSString *)XMLFilePath {
+// fills the modules array with the entries
+-(void) loadModules:(NSString *)xmlFile {
     
-    // Initialize the modules MutableArray
-    modules = [[NSMutableArray alloc] init];	
+    // Initialize the modules MutableArrays
+    moduleXMLList = [[NSMutableArray alloc] init];	
+    moduleVCList  = [[NSMutableArray alloc] init];
     
-    NSString *XMLPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:XMLFilePath];
+    NSString *XMLPath = [[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:xmlFile];
     NSData *XMLData   = [NSData dataWithContentsOfFile:XMLPath];
     CXMLDocument *fileParser = [[[CXMLDocument alloc] initWithData:XMLData options:0 error:nil] autorelease];
     
@@ -99,7 +101,9 @@
         }
         
         // Add the module to the modules array so that the view can access it.
-        [modules addObject:[module copy]];
+        [moduleXMLList addObject:[module copy]];
+        [moduleVCList addObject:
+         [[ModuleViewController alloc] initWithXMLName:[module objectForKey:@"file"]]];
     }
 }
 
@@ -107,7 +111,7 @@
 -(void) createButtons {
     
     // Make sure we have loaded modules
-    if(!modules || [modules count] == 0) {
+    if(!moduleXMLList || [moduleXMLList count] == 0) {
         return;
     }
     
@@ -120,14 +124,14 @@
         yMargin = (sHeight-3*bHeight)/(3+1); // TODO: Fix this to be based off [modules count]
     
     // Create the buttons
-    for(int i=0; i<[modules count]; i++) {
+    for(int i=0; i<[moduleXMLList count]; i++) {
         int c = i%3,
             r = i/3,
             x = c*(xMargin+bWidth)+xMargin,
             y = r*(yMargin+bHeight)+yMargin;
         UIButton *button = [[UIButton alloc] initWithFrame:
                             CGRectMake(x, y, bWidth, bHeight)];
-        [button setImage:[UIImage imageNamed:[[modules objectAtIndex:i] objectForKey:@"thumbnail"]]
+        [button setImage:[UIImage imageNamed:[[moduleXMLList objectAtIndex:i] objectForKey:@"thumbnail"]]
                 forState:UIControlStateNormal];
         
         // Set the tag for module access later
@@ -141,10 +145,11 @@
 
 -(IBAction) buttonPressed:(id)sender {
     
-    [self performSegueWithIdentifier:@"toModule" sender:sender];
+    ModuleViewController *module = [moduleVCList objectAtIndex:[sender tag]];
+    [[self navigationController] pushViewController:module animated:YES];
 }
 
--(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+/* -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     // Make sure we are performing the right segue
     if([[segue identifier] isEqualToString:@"toModule"]) {
@@ -153,6 +158,6 @@
         
         // TODO: Add Module initialization code here
     }
-}
+}*/
 
 @end
