@@ -8,20 +8,21 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ModuleViewController : UIViewController {
+@interface ModuleViewController : UIViewController <NSCopying> {
     UIWebView    *webContent;
     UILabel      *textContent;
     UIScrollView *scrollContent;
 
     NSMutableArray *xmlData;
     NSMutableArray *content;
+    NSString *xmlFile;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webContent;
 @property (nonatomic, retain) IBOutlet UILabel *textContent;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollContent;
 
-- (id)initWithXMLName:(NSString *)xmlName;
+- (id)initWithXMLFile:(NSString *)xmlFile;
 - (void)loadXML:(NSString *)xmlFile;
-- (void)processXML;
+- (void)createContent;
 @end

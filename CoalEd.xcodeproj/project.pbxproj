@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2767F87E14FFE7C200F309BC /* 1.1.html in Resources */ = {isa = PBXBuildFile; fileRef = 2767F87D14FFE7C200F309BC /* 1.1.html */; };
 		277307DA14F69E3900291ADB /* ContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 277307D914F69E3900291ADB /* ContentItem.m */; };
 		27A6A3A614D8696500E77608 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6A3A414D8696500E77608 /* MainViewController.m */; };
 		27E10CD614DAE76A00A52BCB /* ModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E10CD514DAE76A00A52BCB /* ModuleViewController.m */; };
@@ -46,6 +47,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2767F87D14FFE7C200F309BC /* 1.1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 1.1.html; path = modules/html/1.1.html; sourceTree = SOURCE_ROOT; };
 		277307D914F69E3900291ADB /* ContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
 		27A6A3A314D8696500E77608 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		27A6A3A414D8696500E77608 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
@@ -120,6 +122,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2767F87C14FFE7A400F309BC /* html */ = {
+			isa = PBXGroup;
+			children = (
+				2767F87D14FFE7C200F309BC /* 1.1.html */,
+			);
+			name = html;
+			sourceTree = "<group>";
+		};
 		27F7F8DC14E18BBC00F4AAF8 /* TouchXML */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +183,7 @@
 		27F7F90914E18E7A00F4AAF8 /* modules */ = {
 			isa = PBXGroup;
 			children = (
+				2767F87C14FFE7A400F309BC /* html */,
 				27F7F90A14E18EBD00F4AAF8 /* module1.xml */,
 				27F7F90C14E18F0800F4AAF8 /* module.dtd */,
 				27F7F91D14E1930C00F4AAF8 /* modules.xml */,
@@ -233,11 +244,11 @@
 				277307D914F69E3900291ADB /* ContentItem.m */,
 				27E10CD414DAE76A00A52BCB /* ModuleViewController.h */,
 				27E10CD514DAE76A00A52BCB /* ModuleViewController.m */,
-				27F55B9714ED5E92003A1108 /* ModuleViewController.xib */,
 				27A6A3A314D8696500E77608 /* MainViewController.h */,
 				27A6A3A414D8696500E77608 /* MainViewController.m */,
 				EF1ED33714C8981800469D9E /* SplashViewController.h */,
 				EF1ED33814C8981800469D9E /* SplashViewController.m */,
+				27F55B9714ED5E92003A1108 /* ModuleViewController.xib */,
 				EF1ED32614C8981800469D9E /* Supporting Files */,
 			);
 			path = CoalEd;
@@ -320,6 +331,7 @@
 				27F7F91C14E18FED00F4AAF8 /* 7.jpeg in Resources */,
 				27F7F91E14E1930C00F4AAF8 /* modules.xml in Resources */,
 				27F55B9814ED5E92003A1108 /* ModuleViewController.xib in Resources */,
+				2767F87E14FFE7C200F309BC /* 1.1.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

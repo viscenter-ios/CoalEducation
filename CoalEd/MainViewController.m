@@ -12,6 +12,8 @@
 
 @implementation MainViewController
 
+@synthesize scrollView;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -103,7 +105,7 @@
         // Add the module to the modules array so that the view can access it.
         [moduleXMLList addObject:[module copy]];
         [moduleVCList addObject:
-         [[ModuleViewController alloc] initWithXMLName:[module objectForKey:@"file"]]];
+         [[ModuleViewController alloc] initWithXMLFile:[module objectForKey:@"file"]]];
     }
 }
 
@@ -118,16 +120,13 @@
     // Generate the positions of the buttons
     int bWidth  = 128,
         bHeight = 128,
-        sWidth  = [[UIScreen mainScreen] bounds].size.width,
-        sHeight = [[UIScreen mainScreen] bounds].size.height,
-        xMargin = (sWidth-3*bWidth)/4,
-        yMargin = (sHeight-3*bHeight)/(3+1); // TODO: Fix this to be based off [modules count]
-    
+        yMargin = 40,
+        contentHeight = (yMargin+bHeight)*[moduleVCList count]+yMargin; 
+    [[self scrollView] setContentSize: CGSizeMake(768, contentHeight)];
     // Create the buttons
     for(int i=0; i<[moduleXMLList count]; i++) {
-        int c = i%3,
-            r = i/3,
-            x = c*(xMargin+bWidth)+xMargin,
+        int r = i,
+            x = 40,
             y = r*(yMargin+bHeight)+yMargin;
         UIButton *button = [[UIButton alloc] initWithFrame:
                             CGRectMake(x, y, bWidth, bHeight)];

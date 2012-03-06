@@ -21,12 +21,21 @@
     return self;
 }
 
-- (id)initWithXMLName:(NSString *)xmlName {
+- (id)initWithXMLFile:(NSString *)xmlFile {
     self = [super initWithNibName:@"ModuleViewController" bundle:nil];
     if (self) {
-        
+        self->xmlFile = [xmlFile copy];
     }
     return self;
+}
+
+// Change the way copy works
+- (id)copyWithZone:(NSZone *)zone {
+    ModuleViewController *returnObj = [super copyWithZone:zone];
+    returnObj->xmlFile = [xmlFile copyWithZone:zone];
+    returnObj->xmlData = [xmlData copyWithZone:zone];
+    
+    return returnObj;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,18 +58,8 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *rawHTML = @"<html><head></head>\
-    <body style=\"margin:0;background-color:#000\">\
-    <embed id=\"yt\" src=\"%@\" type=\"application/x-shockwave-flash\" \
-    width=\"%0.0f\" height=\"%0.0f\"></embed>\
-    </body></html>";
-    NSString *finalHTML = [NSString stringWithFormat:rawHTML,
-                           @"http://www.youtube.com/watch?v=vhGH0jL24yU",
-                           [webContent frame].size.width,
-                           [webContent frame].size.height];
-    [webContent loadHTMLString:finalHTML baseURL:nil];
-    [textContent sizeToFit];
-    [scrollContent setContentSize:CGSizeMake(900, [scrollContent frame].size.height)];
+    [self loadXML:xmlFile];
+    [self createContent];
     [[webContent scrollView] setBounces:NO]; 
 }
 
@@ -89,27 +88,45 @@
     NSArray *resultNodes = NULL;
     
     // Set the resultNodes Array to contain an object for every instance of a node in the XML file
-    resultNodes = [fileParser nodesForXPath:@"//modules/module" error:nil];
+    resultNodes = [fileParser nodesForXPath:@"//module/content" error:nil];
     
     // Loop through the resultNodes to access each items actual data
     for (CXMLElement *resultElement in resultNodes) {
         
         // Create a temporary MutableDictionary to store the items fields in, which will eventually end up in modules
-        NSMutableDictionary *module = [[NSMutableDictionary alloc] init];
+        NSMutableDictionary *contentItem = [[NSMutableDictionary alloc] init];
         
         // Loop through the children of the current  node
         for(int i = 0; i < [resultElement childCount]; i++) {
             
             // Add each field to the module Dictionary with the node name as key and node value as the value
-            [module setObject:[[resultElement childAtIndex:i] stringValue] forKey:[[resultElement childAtIndex:i] name]];
+            [contentItem setObject:[[resultElement childAtIndex:i] stringValue] forKey:[[resultElement childAtIndex:i] name]];
         }
         
         // Add the module to the modules array so that the view can access it.
-        [xmlData addObject:[module copy]];
+        [xmlData addObject:[contentItem copy]];
     }
 }
 
-- (void)processXML {
-    
+- (void)createContent {
+    UIButton *button;
+    int x,
+        y,
+        bWidth  = 128,
+        bHeight = 128,
+        xMargin = 40;
+    [scrollContent setContentSize:
+     CGSizeMake((bWidth+xMargin)*[xmlData count]+xMargin, bHeight+20)];
+    for (int i=0; i<[xmlData count]; i++) {
+        x = (bWidth+xMargin)*i+xMargin;
+        y = ([scrollContent frame].size.height-bHeight)/2;
+        button = [[UIButton alloc] initWithFrame:
+                                CGRectMake(x, y, bWidth, bHeight)];
+        [button setImage:[UIImage imageNamed:[[xmlData objectAtIndex:i] objectForKey:@"thumbnail"]]
+                forState:UIControlStateNormal];
+        [button setTag:i];
+        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [[self scrollContent] addSubview:button];
+    }
 }
 @end

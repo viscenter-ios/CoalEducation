@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <module>
     <title>Module 1</title>
-    <thumbnail>./thumbs/thumb1.jpg</thumbnail>
     <content>
-        <thumbnail>./thumbs/thumb2.jpg</thumbnail>
+        <thumbnail>1.jpeg</thumbnail>
         <htmlFile>1.1.html</htmlFile>
         <text>
             Text describing the selected content in more detail.
         </text>
     </content>
     <content>
-        <thumbnail>./thumbs/thumb2.jpg</thumbnail>
+        <thumbnail>2.jpeg</thumbnail>
         <htmlFile>1.2.html</htmlFile>
         <text>
             Text describing the selected content in more detail.

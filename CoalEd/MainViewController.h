@@ -11,9 +11,11 @@
 @interface MainViewController : UIViewController {
     NSMutableArray *moduleXMLList;
     NSMutableArray *moduleVCList;
+    UIScrollView *scrollView;
 }
 
 
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 -(void) loadModules:(NSString *)xmlFile;
 -(void) createButtons;
 -(IBAction) buttonPressed:(id)sender;
