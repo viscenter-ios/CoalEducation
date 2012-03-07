@@ -16,8 +16,8 @@
 
 
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
--(void) loadModules:(NSString *)xmlFile;
--(void) createButtons;
--(IBAction) buttonPressed:(id)sender;
+- (void) loadModules:(NSString *)xmlFile;
+- (void) createButtons;
+- (IBAction) buttonPressed:(id)sender;
 
 @end

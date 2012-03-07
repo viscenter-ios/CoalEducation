@@ -123,6 +123,7 @@
         yMargin = 40,
         contentHeight = (yMargin+bHeight)*[moduleVCList count]+yMargin; 
     [[self scrollView] setContentSize: CGSizeMake(768, contentHeight)];
+    
     // Create the buttons
     for(int i=0; i<[moduleXMLList count]; i++) {
         int r = i,

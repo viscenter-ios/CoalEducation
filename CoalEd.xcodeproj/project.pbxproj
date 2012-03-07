@@ -10,6 +10,7 @@
 		2767F87E14FFE7C200F309BC /* 1.1.html in Resources */ = {isa = PBXBuildFile; fileRef = 2767F87D14FFE7C200F309BC /* 1.1.html */; };
 		277307DA14F69E3900291ADB /* ContentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 277307D914F69E3900291ADB /* ContentItem.m */; };
 		27A6A3A614D8696500E77608 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27A6A3A414D8696500E77608 /* MainViewController.m */; };
+		27B8F86515068D0300B8AFCA /* 1.2.html in Resources */ = {isa = PBXBuildFile; fileRef = 27B8F86415068D0300B8AFCA /* 1.2.html */; };
 		27E10CD614DAE76A00A52BCB /* ModuleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27E10CD514DAE76A00A52BCB /* ModuleViewController.m */; };
 		27F55B9814ED5E92003A1108 /* ModuleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27F55B9714ED5E92003A1108 /* ModuleViewController.xib */; };
 		27F7F8FA14E18BBC00F4AAF8 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 27F7F8DF14E18BBC00F4AAF8 /* CXMLDocument_CreationExtensions.m */; };
@@ -51,6 +52,7 @@
 		277307D914F69E3900291ADB /* ContentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContentItem.m; sourceTree = "<group>"; };
 		27A6A3A314D8696500E77608 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		27A6A3A414D8696500E77608 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		27B8F86415068D0300B8AFCA /* 1.2.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; name = 1.2.html; path = modules/html/1.2.html; sourceTree = SOURCE_ROOT; };
 		27D84AB714F697D50004CD8E /* ContentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContentItem.h; sourceTree = "<group>"; };
 		27E10CD414DAE76A00A52BCB /* ModuleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModuleViewController.h; sourceTree = "<group>"; };
 		27E10CD514DAE76A00A52BCB /* ModuleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModuleViewController.m; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				2767F87D14FFE7C200F309BC /* 1.1.html */,
+				27B8F86415068D0300B8AFCA /* 1.2.html */,
 			);
 			name = html;
 			sourceTree = "<group>";
@@ -332,6 +335,7 @@
 				27F7F91E14E1930C00F4AAF8 /* modules.xml in Resources */,
 				27F55B9814ED5E92003A1108 /* ModuleViewController.xib in Resources */,
 				2767F87E14FFE7C200F309BC /* 1.1.html in Resources */,
+				27B8F86515068D0300B8AFCA /* 1.2.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

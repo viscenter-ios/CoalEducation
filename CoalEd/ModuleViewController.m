@@ -25,6 +25,7 @@
     self = [super initWithNibName:@"ModuleViewController" bundle:nil];
     if (self) {
         self->xmlFile = [xmlFile copy];
+        moduleId = -1;
     }
     return self;
 }
@@ -60,7 +61,7 @@
     [super viewDidLoad];
     [self loadXML:xmlFile];
     [self createContent];
-    [[webContent scrollView] setBounces:NO]; 
+    [[webContent scrollView] setBounces:NO];
 }
 
 
@@ -87,6 +88,12 @@
     // Create a new Array object to be used with the looping of the results from the fileParser
     NSArray *resultNodes = NULL;
     
+    // Load the module ID
+    moduleId =  [[[fileParser nodeForXPath:@"//module/id" error:nil] stringValue] intValue];    
+    
+    // Set up the title
+    [[self navigationItem] setTitle:[[fileParser nodeForXPath:@"//module/title" error:nil] stringValue]];
+    
     // Set the resultNodes Array to contain an object for every instance of a node in the XML file
     resultNodes = [fileParser nodesForXPath:@"//module/content" error:nil];
     
@@ -110,6 +117,9 @@
 
 - (void)createContent {
     UIButton *button;
+    
+    // Calculate the frame of each button and the content size of the
+    // scroll view
     int x,
         y,
         bWidth  = 128,
@@ -117,6 +127,8 @@
         xMargin = 40;
     [scrollContent setContentSize:
      CGSizeMake((bWidth+xMargin)*[xmlData count]+xMargin, bHeight+20)];
+    
+    // Create a button for each content item
     for (int i=0; i<[xmlData count]; i++) {
         x = (bWidth+xMargin)*i+xMargin;
         y = ([scrollContent frame].size.height-bHeight)/2;
@@ -125,8 +137,26 @@
         [button setImage:[UIImage imageNamed:[[xmlData objectAtIndex:i] objectForKey:@"thumbnail"]]
                 forState:UIControlStateNormal];
         [button setTag:i];
-        [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
+        [button addTarget:self
+                   action:@selector(buttonPressed:)
+         forControlEvents:UIControlEventTouchUpInside];
         [[self scrollContent] addSubview:button];
     }
+}
+
+// Perform an action based on the tag of the sender. In this case we will
+// load an HTML file.
+- (IBAction) buttonPressed:(id)sender {
+    
+    // Retrieve file name
+    NSString *fileName;
+    fileName = [[xmlData objectAtIndex:[sender tag]] objectForKey:@"htmlFile"];
+    
+    // Load file with web view
+    [webContent loadRequest:
+     [NSURLRequest requestWithURL:
+      [NSURL fileURLWithPath:
+       [[NSBundle mainBundle] pathForResource:fileName ofType:nil]isDirectory:NO]]];
+    [textContent setText:[[xmlData objectAtIndex:[sender tag]] objectForKey:@"text"]];
 }
 @end

@@ -16,6 +16,7 @@
     NSMutableArray *xmlData;
     NSMutableArray *content;
     NSString *xmlFile;
+    NSInteger moduleId;
 }
 
 @property (nonatomic, retain) IBOutlet UIWebView *webContent;
@@ -25,4 +26,5 @@
 - (id)initWithXMLFile:(NSString *)xmlFile;
 - (void)loadXML:(NSString *)xmlFile;
 - (void)createContent;
+- (IBAction) buttonPressed:(id)sender;
 @end
