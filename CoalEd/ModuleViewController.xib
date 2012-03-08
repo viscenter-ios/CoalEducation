@@ -47,6 +47,7 @@
 							<object class="NSPSMatrix" key="NSFrameMatrix"/>
 							<string key="NSFrameSize">{768, 432}</string>
 							<reference key="NSSuperview" ref="606900826"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="374146977"/>
 							<object class="NSColor" key="IBUIBackgroundColor" id="725725355">
 								<int key="NSColorSpace">3</int>
@@ -62,6 +63,7 @@
 							<object class="NSPSMatrix" key="NSFrameMatrix"/>
 							<string key="NSFrame">{{50, 466}, {671, 19}}</string>
 							<reference key="NSSuperview" ref="606900826"/>
+							<reference key="NSWindow"/>
 							<reference key="NSNextKeyView" ref="518410970"/>
 							<bool key="IBUIOpaque">NO</bool>
 							<bool key="IBUIClipsSubviews">YES</bool>
@@ -95,16 +97,20 @@
 							<object class="NSPSMatrix" key="NSFrameMatrix"/>
 							<string key="NSFrame">{{0, 856}, {768, 148}}</string>
 							<reference key="NSSuperview" ref="606900826"/>
+							<reference key="NSWindow"/>
+							<reference key="NSNextKeyView"/>
 							<reference key="IBUIBackgroundColor" ref="725725355"/>
 							<bool key="IBUIClipsSubviews">YES</bool>
 							<bool key="IBUIMultipleTouchEnabled">YES</bool>
 							<string key="targetRuntimeIdentifier">IBIPadFramework</string>
+							<bool key="IBUIAlwaysBounceHorizontal">YES</bool>
 							<bool key="IBUIShowsVerticalScrollIndicator">NO</bool>
 						</object>
 					</array>
 					<object class="NSPSMatrix" key="NSFrameMatrix"/>
 					<string key="NSFrameSize">{768, 1004}</string>
 					<reference key="NSSuperview"/>
+					<reference key="NSWindow"/>
 					<reference key="NSNextKeyView" ref="163194068"/>
 					<object class="NSColor" key="IBUIBackgroundColor">
 						<int key="NSColorSpace">1</int>
@@ -274,7 +280,48 @@
 			<nil key="sourceID"/>
 			<int key="maxID">28</int>
 		</object>
-		<object class="IBClassDescriber" key="IBDocument.Classes"/>
+		<object class="IBClassDescriber" key="IBDocument.Classes">
+			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
+				<object class="IBPartialClassDescription">
+					<string key="className">ModuleViewController</string>
+					<string key="superclassName">UIViewController</string>
+					<object class="NSMutableDictionary" key="actions">
+						<string key="NS.key.0">buttonPressed:</string>
+						<string key="NS.object.0">id</string>
+					</object>
+					<object class="NSMutableDictionary" key="actionInfosByName">
+						<string key="NS.key.0">buttonPressed:</string>
+						<object class="IBActionInfo" key="NS.object.0">
+							<string key="name">buttonPressed:</string>
+							<string key="candidateClassName">id</string>
+						</object>
+					</object>
+					<dictionary class="NSMutableDictionary" key="outlets">
+						<string key="scrollContent">UIScrollView</string>
+						<string key="textContent">UILabel</string>
+						<string key="webContent">UIWebView</string>
+					</dictionary>
+					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
+						<object class="IBToOneOutletInfo" key="scrollContent">
+							<string key="name">scrollContent</string>
+							<string key="candidateClassName">UIScrollView</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="textContent">
+							<string key="name">textContent</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="webContent">
+							<string key="name">webContent</string>
+							<string key="candidateClassName">UIWebView</string>
+						</object>
+					</dictionary>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">./Classes/ModuleViewController.h</string>
+					</object>
+				</object>
+			</array>
+		</object>
 		<int key="IBDocument.localizationMode">0</int>
 		<string key="IBDocument.TargetRuntimeIdentifier">IBIPadFramework</string>
 		<bool key="IBDocument.PluginDeclaredDependenciesTrackSystemTargetVersion">YES</bool>
