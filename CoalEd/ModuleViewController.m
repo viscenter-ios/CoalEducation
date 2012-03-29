@@ -157,6 +157,14 @@
      [NSURLRequest requestWithURL:
       [NSURL fileURLWithPath:
        [[NSBundle mainBundle] pathForResource:fileName ofType:nil]isDirectory:NO]]];
-    [textContent setText:[[xmlData objectAtIndex:[sender tag]] objectForKey:@"text"]];
+    [textContent setText:[[xmlData objectAtIndex:[sender tag]] objectForKey:@"description"]];
+    CGSize size = [[textContent text] sizeWithFont:[textContent font]
+                                          forWidth:[textContent frame].size.width
+                                     lineBreakMode:[textContent lineBreakMode]];
+    [textContent setFrame:CGRectMake([textContent frame].origin.x,
+                                     [textContent frame].origin.y,
+                                     size.width,
+                                     size.height)];
+     
 }
 @end

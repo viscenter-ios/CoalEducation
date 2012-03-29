@@ -8,16 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController {
+@interface MainViewController : UITableViewController  {
     NSMutableArray *moduleXMLList;
     NSMutableArray *moduleVCList;
-    UIScrollView *scrollView;
 }
 
-
-@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 - (void) loadModules:(NSString *)xmlFile;
-- (void) createButtons;
+- (void) createCells;
 - (IBAction) buttonPressed:(id)sender;
-
 @end

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MainViewController.h"
 
-@interface CoalEdAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface CoalEdAppDelegate : UIResponder <UIApplicationDelegate> {
+    UINavigationController *naviController;
+}
+@property (strong, nonatomic) IBOutlet UIWindow *window;
+@property (nonatomic, retain) UINavigationController *naviController;
 
 @end

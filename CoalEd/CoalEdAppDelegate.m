@@ -10,7 +10,23 @@
 
 @implementation CoalEdAppDelegate
 
-@synthesize window = _window;
+@synthesize naviController, window;
+
+- (void)applicationDidFinishLaunching:(UIApplication *)application
+{
+    MainViewController *mainView = [[MainViewController alloc] initWithNibName:@"MainViewController"
+                                                                        bundle:nil];
+    if(!mainView)
+    {
+        return;
+    }
+    naviController = [[UINavigationController alloc] initWithRootViewController:mainView];
+    [naviController setToolbarHidden:YES];
+    [[naviController navigationBar] setTintColor:[UIColor blackColor]];
+  	[[naviController toolbar] setTintColor:[UIColor blackColor]];
+  	[self.window setRootViewController:naviController];
+	[self.window makeKeyWindow];
+}
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

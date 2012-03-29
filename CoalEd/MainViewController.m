@@ -7,19 +7,17 @@
 //
 
 #import "MainViewController.h"
+#import "MainViewCell.h"
 #import "ModuleViewController.h"
 #import "TouchXML.h"
 
 @implementation MainViewController
-
-@synthesize scrollView;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self loadModules:@"modules.xml"];
-        [self createButtons];
     }
     return self;
 }
@@ -53,8 +51,9 @@
 {
     [super viewDidLoad];
     [[self navigationItem] setHidesBackButton:YES];
+    [[self navigationItem] setTitle:@"Lessons"];
     [self loadModules:@"modules.xml"];
-    [self createButtons];
+    [[self tableView] setRowHeight:168.0];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -110,25 +109,18 @@
 }
 
 // Creates the buttons after having loaded the modules
--(void) createButtons {
-    
+-(void) createCells {
+    /*
     // Make sure we have loaded modules
     if(!moduleXMLList || [moduleXMLList count] == 0) {
         return;
     }
     
-    // Generate the positions of the buttons
-    int bWidth  = 128,
-        bHeight = 128,
-        yMargin = 40,
-        contentHeight = (yMargin+bHeight)*[moduleVCList count]+yMargin; 
-    [[self scrollView] setContentSize: CGSizeMake(768, contentHeight)];
-    
+    // Generate the images
+    int imageWidth  = 128,
+        imageHeight = 128;
     // Create the buttons
     for(int i=0; i<[moduleXMLList count]; i++) {
-        int r = i,
-            x = 40,
-            y = r*(yMargin+bHeight)+yMargin;
         UIButton *button = [[UIButton alloc] initWithFrame:
                             CGRectMake(x, y, bWidth, bHeight)];
         [button setImage:[UIImage imageNamed:[[moduleXMLList objectAtIndex:i] objectForKey:@"thumbnail"]]
@@ -139,9 +131,14 @@
         [button setTag:i];
         [button addTarget:self action:@selector(buttonPressed:) forControlEvents:UIControlEventTouchUpInside];
         [[self view] addSubview:button];
-    }
+    }*/
 }
 
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section
+{
+    return [moduleXMLList count];
+}
 
 -(IBAction) buttonPressed:(id)sender {
     
@@ -149,15 +146,23 @@
     [[self navigationController] pushViewController:module animated:YES];
 }
 
-/* -(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
-    // Make sure we are performing the right segue
-    if([[segue identifier] isEqualToString:@"toModule"]) {
-        ModuleViewController *mv = [segue destinationViewController];
-        int tagIndex = [(UIButton *)sender tag];
-        
-        // TODO: Add Module initialization code here
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    MainViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainViewCell"];
+    int i = [indexPath row];
+    NSLog(@"%d\n",i);
+    if (cell == nil) {
+        // Create a temporary UIViewController to instantiate the custom cell.
+        UIViewController *temporaryController = [[UIViewController alloc] initWithNibName:@"MainViewCell" bundle:nil];
+        // Grab a pointer to the custom cell.
+        cell = (MainViewCell *)temporaryController.view;
+        // Release the temporary UIViewController.
+        [temporaryController release];
     }
-}*/
+    [[cell icon] setImage:[UIImage imageNamed:[[moduleXMLList objectAtIndex:i] objectForKey:@"thumbnail"]]];
+    [[cell title] setText:[[moduleXMLList objectAtIndex:i] objectForKey:@"title"]];
+    [[cell description] setText:[[moduleXMLList objectAtIndex:i] objectForKey:@"description"]];
+    return cell;
+}
 
 @end

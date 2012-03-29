@@ -2,6 +2,7 @@
 <modules>
     <module>
         <title>Module 1</title>
+        <description>This module is about stuff.</description>
         <thumbnail>1.jpeg</thumbnail>
         <file>module1.xml</file>
     </module>
