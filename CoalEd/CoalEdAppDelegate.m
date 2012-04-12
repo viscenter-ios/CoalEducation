@@ -20,12 +20,13 @@
     {
         return;
     }
-    naviController = [[UINavigationController alloc] initWithRootViewController:mainView];
-    [naviController setToolbarHidden:YES];
+    naviController = [[UINavigationController alloc] initWithRootViewController:mainView];  
+    [mainView release];
+  	[self.window setRootViewController:naviController];
+	[self.window makeKeyAndVisible];
     [[naviController navigationBar] setTintColor:[UIColor blackColor]];
   	[[naviController toolbar] setTintColor:[UIColor blackColor]];
-  	[self.window setRootViewController:naviController];
-	[self.window makeKeyWindow];
+    [naviController setToolbarHidden:YES];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
