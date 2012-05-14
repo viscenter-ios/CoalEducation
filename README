@@ -1,0 +1,16 @@
+This app revolves around adding content via XML files. It should be fairly
+obvious looking at the ones currently included, but there are some nuances.
+These are as follows:
+
+Each module must be listed in the modules.xml file. Beyond that file, they can
+be named anything you want.
+Each module file, as included in modules.xml, contains an id tag, a title tag,
+and one or more content tags.
+If there is only one content item, then there will be no content item buttons
+displayed on the bottom of the page. If there are multiple, the button images
+are described by the content's thumbnail tag.
+Each content item can have ONE optional htmlFile tag. This tag displays the
+aforementioned file in the top half of the module screen. If this tag is absent
+then the whole screen is dedicated to the description.
+
+
