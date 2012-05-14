@@ -7,15 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TopAlignedLabel.h"
 
 @interface MainViewCell : UITableViewCell {
     UIImageView *icon;
-    UILabel *title;
-    UILabel *description;
+    TopAlignedLabel *title;
+    TopAlignedLabel *description;
 }
 @property (nonatomic, retain) IBOutlet UIImageView *icon;
-@property (nonatomic, retain) IBOutlet UILabel *title;
-@property (nonatomic, retain) IBOutlet UILabel *description;
+@property (nonatomic, retain) IBOutlet TopAlignedLabel *title;
+@property (nonatomic, retain) IBOutlet TopAlignedLabel *description;
 
 
 @end

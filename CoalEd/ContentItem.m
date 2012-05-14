@@ -12,7 +12,5 @@
 
 @synthesize button, html, text;
 
-
-
 @end
 

@@ -1,39 +1,20 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <modules>
     <module>
-        <title>Module 1</title>
-        <description>This module is about stuff.</description>
-        <thumbnail>1.jpeg</thumbnail>
+        <title>Carbon Capture Storage</title>
+        <description>This module is about carbon and stuff. Also I want a longer description so that I can see how word wrap works.</description>
+        <thumbnail>Carbon_Capture_Storage.png</thumbnail>
         <file>module1.xml</file>
     </module>
     <module>
-        <title>Module 2</title>
-        <thumbnail>2.jpeg</thumbnail>
+        <title>Coal Products</title>
+        <thumbnail>Coal_Products.png</thumbnail>
         <file>module2.xml</file>
     </module>
     <module>
-        <title>Module 3</title>
-        <thumbnail>3.jpeg</thumbnail>
-        <file>module3.xml</file>
+        <title>Energy 101</title>
+        <thumbnail>Energy_101.png</thumbnail>
+        <file>module2.xml</file>
     </module>
-    <module>
-        <title>Module 4</title>
-        <thumbnail>4.jpeg</thumbnail>
-        <file>module4.xml</file>
-    </module>
-    <module>
-        <title>Module 5</title>
-        <thumbnail>5.jpeg</thumbnail>
-        <file>module5.xml</file>
-    </module>
-    <module>
-        <title>Module 6</title>
-        <thumbnail>6.jpeg</thumbnail>
-        <file>module6.xml</file>
-    </module>
-    <module>
-        <title>Module 7</title>
-        <thumbnail>7.jpeg</thumbnail>
-        <file>module7.xml</file>
-    </module>
+
 </modules>

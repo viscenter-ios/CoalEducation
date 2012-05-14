@@ -18,6 +18,12 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         [self loadModules:@"modules.xml"];
+        
+        // Load backgroud image
+        UIImageView *tmpImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iPad_Background.jpg"]];
+        [tmpImageView setFrame:self.tableView.frame]; 
+        self.tableView.backgroundView = tmpImageView;
+        [tmpImageView release];
     }
     return self;
 }
@@ -37,14 +43,13 @@
     
     // Release any cached data, images, etc that aren't in use.
 }
-
+    
 #pragma mark - View lifecycle
 
 - (void)viewWillAppear:(BOOL)animated
 {
     // Show the navigation controllers after the root view
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
-    [[self navigationController] setToolbarHidden:NO animated:YES];
 }
 
 - (void)viewDidLoad
@@ -54,6 +59,7 @@
     [[self navigationItem] setTitle:@"Lessons"];
     [self loadModules:@"modules.xml"];
     [[self tableView] setRowHeight:168.0];
+    
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -106,6 +112,17 @@
         [moduleVCList addObject:
          [[ModuleViewController alloc] initWithXMLFile:[module objectForKey:@"file"]]];
     }
+    
+    // Setup linked list of modules
+    
+    // Setup first and last items
+    [[moduleVCList objectAtIndex:0] setNext:[moduleVCList objectAtIndex:1]];
+    [[moduleVCList lastObject] setPrev:[moduleVCList objectAtIndex:[moduleVCList count] - 2]];
+    // Setup other items
+    for (int i = 1; i < [moduleVCList count] - 1; ++i) {
+        [[moduleVCList objectAtIndex:i] setNext:[moduleVCList objectAtIndex:i+1]];
+        [[moduleVCList objectAtIndex:i] setPrev:[moduleVCList objectAtIndex:i-1]];
+    }
 }
 
 // Creates the buttons after having loaded the modules
@@ -140,13 +157,6 @@
     return [moduleXMLList count];
 }
 
--(IBAction) buttonPressed:(id)sender {
-    
-    ModuleViewController *module = [moduleVCList objectAtIndex:[sender tag]];
-    [[self navigationController] pushViewController:module animated:YES];
-}
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     MainViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MainViewCell"];
     int i = [indexPath row];
@@ -163,6 +173,11 @@
     [[cell title] setText:[[moduleXMLList objectAtIndex:i] objectForKey:@"title"]];
     [[cell description] setText:[[moduleXMLList objectAtIndex:i] objectForKey:@"description"]];
     return cell;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    ModuleViewController *module = [moduleVCList objectAtIndex:[indexPath row]];
+    [[self navigationController] pushViewController:module animated:YES];
 }
 
 @end

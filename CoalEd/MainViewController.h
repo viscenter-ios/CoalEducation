@@ -15,5 +15,4 @@
 
 - (void) loadModules:(NSString *)xmlFile;
 - (void) createCells;
-- (IBAction) buttonPressed:(id)sender;
 @end

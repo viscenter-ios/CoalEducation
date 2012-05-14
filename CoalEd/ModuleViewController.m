@@ -11,7 +11,7 @@
 
 @implementation ModuleViewController
 
-@synthesize webContent, textContent, scrollContent;
+@synthesize webContent, lowerTextContent, upperTextContent, upperTextBG, lowerTextBG, scrollContent, prev, next, prevButton, nextButton, homeButton, toolbar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -23,9 +23,11 @@
 
 - (id)initWithXMLFile:(NSString *)xmlFile {
     self = [super initWithNibName:@"ModuleViewController" bundle:nil];
+    prev = nil;
+    next = nil;
     if (self) {
         self->xmlFile = [xmlFile copy];
-        moduleId = -1;
+        moduleId = -1;       
     }
     return self;
 }
@@ -59,9 +61,37 @@
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self loadXML:xmlFile];
+    [self loadXML];
     [self createContent];
     [[webContent scrollView] setBounces:NO];
+    [self loadSub:0];
+    
+    //Load background image
+    UIImageView *tmpImageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"iPad_Background.jpg"]];
+    [tmpImageView setFrame:self.view.frame]; 
+    [self.view addSubview: tmpImageView];
+    [self.view sendSubviewToBack: tmpImageView];
+    [tmpImageView release];
+    
+    UIBarButtonItem *spacer1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    UIBarButtonItem *spacer2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    // Set up toolbar
+    if(!prev && !next)
+    {
+        [toolbar setItems:[[NSArray alloc] initWithObjects:spacer1, homeButton, spacer2, nil] animated:NO];
+    }
+    else if(!prev)
+    {
+        [toolbar setItems:[[NSArray alloc] initWithObjects:spacer1, homeButton, spacer2, nextButton, nil] animated:NO];
+    }
+    else if(!next)
+    {
+        [toolbar setItems:[[NSArray alloc] initWithObjects:prevButton, spacer1, homeButton, spacer2, nil] animated:NO];
+    }
+    else
+    {
+        [toolbar setItems:[[NSArray alloc] initWithObjects:prevButton, spacer1, homeButton, spacer2, nextButton, nil] animated:NO];
+    }
 }
 
 
@@ -76,7 +106,7 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
-- (void)loadXML:(NSString *)xmlFile {
+- (void)loadXML {
     
     // Initialize the modules MutableArrays
     xmlData = [[NSMutableArray alloc] init];	
@@ -125,6 +155,10 @@
         bWidth  = 128,
         bHeight = 128,
         xMargin = 40;
+    if([xmlData count] <= 1) {
+        [scrollContent setHidden:YES];
+    }
+    
     [scrollContent setContentSize:
      CGSizeMake((bWidth+xMargin)*[xmlData count]+xMargin, bHeight+20)];
     
@@ -147,24 +181,59 @@
 // Perform an action based on the tag of the sender. In this case we will
 // load an HTML file.
 - (IBAction) buttonPressed:(id)sender {
+    [self loadSub:[sender tag]];
+}
+
+- (IBAction)toPrev:(id)sender {
+    if([[[self navigationController] viewControllers] containsObject:prev]) {
+        [[self navigationController] popToViewController:prev animated:YES];
+    }
+    else {
+        [[self navigationController] pushViewController:prev animated:YES];
+    }
+}
+
+- (IBAction)toNext:(id)sender {
+    if([[[self navigationController] viewControllers] containsObject:next]) {
+        [[self navigationController] popToViewController:next animated:YES];
+    }
+    else {
+        [[self navigationController] pushViewController:next animated:YES];
+    }
+}
+
+- (IBAction)toHome:(id)sender {
+    [[self navigationController] popToRootViewControllerAnimated:YES];
+}
+
+- (void) loadSub:(int) index {
     
     // Retrieve file name
     NSString *fileName;
-    fileName = [[xmlData objectAtIndex:[sender tag]] objectForKey:@"htmlFile"];
+    fileName = [[xmlData objectAtIndex:index] objectForKey:@"htmlFile"];
     
     // Load file with web view
-    [webContent loadRequest:
-     [NSURLRequest requestWithURL:
-      [NSURL fileURLWithPath:
-       [[NSBundle mainBundle] pathForResource:fileName ofType:nil]isDirectory:NO]]];
-    [textContent setText:[[xmlData objectAtIndex:[sender tag]] objectForKey:@"description"]];
-    CGSize size = [[textContent text] sizeWithFont:[textContent font]
-                                          forWidth:[textContent frame].size.width
-                                     lineBreakMode:[textContent lineBreakMode]];
-    [textContent setFrame:CGRectMake([textContent frame].origin.x,
-                                     [textContent frame].origin.y,
-                                     size.width,
-                                     size.height)];
-     
+    if(fileName) {
+        [webContent setHidden:NO];
+        [upperTextContent setHidden:YES];
+        [lowerTextContent setHidden:NO];
+        [upperTextBG setHidden:YES];
+        [lowerTextBG setHidden:NO];
+        [webContent loadRequest:
+         [NSURLRequest requestWithURL:
+          [NSURL fileURLWithPath:
+           [[NSBundle mainBundle] pathForResource:fileName ofType:nil]isDirectory:NO]]];
+        [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
+        
+    }
+    else {
+        [webContent setHidden:YES];
+        [upperTextContent setHidden:NO];
+        [lowerTextContent setHidden:YES];
+        [upperTextBG setHidden:NO];
+        [lowerTextBG setHidden:YES];
+        [upperTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
+    }
 }
+
 @end
