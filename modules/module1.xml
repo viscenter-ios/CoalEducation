@@ -1,15 +1,37 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This is an individual module.  I will comment on the first one only since they are currently all the same.  -->
+<!-- You should not change the module id. -->
 <module>
-    <id>1</id>
-    <title>Module 1</title>
-    <content>
-        <thumbnail>1.jpeg</thumbnail>
-        <description>Welcome to Power UP!
-
-Energy impacts every area of our life, but often we don’t think about where it comes from and how much we are using every day. Power UP takes a look at how we use energy, where it comes from and how we can use it more responsibly.
+    <id>1</id>  <!-- This is the module id...don't change this unless you want to change the order of the modules -->
+    <title>Energy 101</title>  <!-- This is the module title...don't change this. -->
+    <!-- This is one piece of content in a module.  It can have one of three content types: video, image, or text. -->
+    <!-- Each piece of content associated with a module must have its own content section like the one below. -->
+    <content>   <!-- This is a video content section -->
+        <contentType>video</contentType>    <!-- This must correspond the appropriate type of content...duh lol -->
+        <thumbnail>Energy_101.png</thumbnail>    <!-- ADD THIS STILL FRAME AFTER THE VIDEOS ARE UP ON YOUTUBE -->
+        <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>  <!-- CHANGE THIS TO THE YOUTUBE URL FOR THE VIDEO -->
+        <description>Everyday each of us use energy to power our daily activities. We often think that our energy usage doesn’t matter, but it really adds up over time. During a typical day a teenager uses energy from the time they get out of bed until they go back to bed. Let’s add up just how much energy we are using every day. </description>  <!-- DONT CHANGE THIS...UNLESS JULIE CHANGES THE DESCRIPTIONS LATER -->
+    </content>  <!-- End video content section -->
+    <content> <!-- This is a image content section -->
+        <contentType>image</contentType>
+        <thumbnail>image.png</thumbnail> <!--CHANGE THIS TO THE APPROPRIATE IMAGE FILE NAME -->
+        <description>This is a default image. Boo yah!</description> <!-- This one should be obvious haha -->
+    </content> <!-- End image content section -->
+    <content> <!-- This is a raw text content section...I'm not even going to bother with explaing it. -->
+        <contentType>text</contentType>
+        <thumbnail>text.gif</thumbnail>
+        <description>   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
             
-In each of the seven modules, you will watch a short video that introduces key energy ideas. Look inside a power plant, learn how burnt coal ash can be used in concrete, and find out what algae has to do with keeping carbon out of the air.
+            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
             
-Share the videos with friends through our YouTube channel and download the mobile iPad Power UP app to take them along with you.</description>
+            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            
+            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            
+            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            
+            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            
+        </description>
     </content>
 </module>

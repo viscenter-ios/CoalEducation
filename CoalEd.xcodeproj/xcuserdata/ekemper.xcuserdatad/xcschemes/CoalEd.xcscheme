@@ -14,35 +14,46 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
-               BuildableName = "CoalEdXMLProto.app"
-               BlueprintName = "CoalEdXMLProto"
-               ReferencedContainer = "container:CoalEdXMLProto.xcodeproj">
+               BuildableName = "CoalEd.app"
+               BlueprintName = "CoalEd"
+               ReferencedContainer = "container:CoalEd.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
    </BuildAction>
    <TestAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
+            BuildableName = "CoalEd.app"
+            BlueprintName = "CoalEd"
+            ReferencedContainer = "container:CoalEd.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </TestAction>
    <LaunchAction
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.GDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.GDB"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Debug"
-      debugDocumentVersioning = "YES">
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      allowLocationSimulation = "YES">
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
-            BuildableName = "CoalEdXMLProto.app"
-            BlueprintName = "CoalEdXMLProto"
-            ReferencedContainer = "container:CoalEdXMLProto.xcodeproj">
+            BuildableName = "CoalEd.app"
+            BlueprintName = "CoalEd"
+            ReferencedContainer = "container:CoalEd.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -58,9 +69,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
-            BuildableName = "CoalEdXMLProto.app"
-            BlueprintName = "CoalEdXMLProto"
-            ReferencedContainer = "container:CoalEdXMLProto.xcodeproj">
+            BuildableName = "CoalEd.app"
+            BlueprintName = "CoalEd"
+            ReferencedContainer = "container:CoalEd.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

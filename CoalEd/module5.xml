@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <module>
-    <id>2</id>
-    <title>Energy Sources</title>
+    <id>5</id>
+    <title>Water/Energy</title>
     <content>
         <contentType>video</contentType>
-        <thumbnail>Energy_Sources.png</thumbnail>
+        <thumbnail>Water_Energy.png</thumbnail>
         <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
-        <description>In Kentucky, we use coal for 92% of our energy, but that number is different for every state. Energy can be made from coal, natural gas, oil, hydro and sustainables such as solar, wind or biomass. Each of these energy sources has its own advantages and disadvantages.</description>
+        <description>Water is our most vital natural resource and it is impacted every day by energy use. All energy sources are dependent upon water or impact water in some way.</description>
     </content>
     <content>
         <contentType>image</contentType>

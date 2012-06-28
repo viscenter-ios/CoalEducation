@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <module>
-    <id>2</id>
-    <title>Energy Sources</title>
+    <id>6</id>
+    <title>Carbon Capture and Storage</title>
     <content>
         <contentType>video</contentType>
-        <thumbnail>Energy_Sources.png</thumbnail>
+        <thumbnail>Carbon_Capture_Storage.png</thumbnail>
         <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
-        <description>In Kentucky, we use coal for 92% of our energy, but that number is different for every state. Energy can be made from coal, natural gas, oil, hydro and sustainables such as solar, wind or biomass. Each of these energy sources has its own advantages and disadvantages.</description>
+        <description>Carbon is a significant issue in the energy industry. There are two major areas of research in how to manage carbon: the storage of carbon and the use of carbon to create biofuels.</description>
     </content>
     <content>
         <contentType>image</contentType>

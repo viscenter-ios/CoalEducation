@@ -12,11 +12,11 @@
 @interface MainViewCell : UITableViewCell {
     UIImageView *icon;
     TopAlignedLabel *title;
-    TopAlignedLabel *description;
+    UITextView *description;
 }
 @property (nonatomic, retain) IBOutlet UIImageView *icon;
 @property (nonatomic, retain) IBOutlet TopAlignedLabel *title;
-@property (nonatomic, retain) IBOutlet TopAlignedLabel *description;
+@property (nonatomic, retain) IBOutlet UITextView *description;
 
 
 @end

@@ -178,6 +178,7 @@
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     ModuleViewController *module = [moduleVCList objectAtIndex:[indexPath row]];
     [[self navigationController] pushViewController:module animated:YES];
+    
 }
 
 @end

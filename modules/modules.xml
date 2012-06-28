@@ -1,20 +1,53 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This is the list of modules along with their titles, descriptions, and icon file names.  -->
+<!-- You should not need to change any of this except the last icon file name for the About Power Up! module. -->
+<!-- A new icon is currently being made for that module. -->
 <modules>
     <module>
-        <title>Carbon Capture Storage</title>
-        <description>This module is about carbon and stuff. Also I want a longer description so that I can see how word wrap works.</description>
-        <thumbnail>Carbon_Capture_Storage.png</thumbnail>
+        <title>Energy 101</title>
+        <description>Everyday each of us use energy to power our daily activities. We often think that our energy usage doesn’t matter, but it really adds up over time.</description>
+        <thumbnail>Energy_101.png</thumbnail>
         <file>module1.xml</file>
     </module>
     <module>
-        <title>Coal Products</title>
-        <thumbnail>Coal_Products.png</thumbnail>
+        <title>Energy Sources</title>
+        <description>In Kentucky, we use coal for 92% of our energy, but that number is different for every state. Energy can be made from coal, natural gas, oil, hydro and sustainables such as solar, wind or biomass.</description>
+        <thumbnail>Energy_Sources.png</thumbnail>
         <file>module2.xml</file>
     </module>
     <module>
-        <title>Energy 101</title>
-        <thumbnail>Energy_101.png</thumbnail>
-        <file>module2.xml</file>
+        <title>Rock to Electron</title>
+        <description>How does a piece of coal become electricity. From the mining, processing, transportation to burning at a power plant, we follow the rock as it becomes a kilowatt. </description>
+        <thumbnail>Rock_to_Electron.png</thumbnail>
+        <file>module3.xml</file>
     </module>
-
+    <module>
+        <title>Energy Use and Conservation</title>
+        <description>Energy conservation is a critical part of the conversation about energy. Both on a large scale as well as individual consumers can make a difference in making energy use as efficient as possible.</description>
+        <thumbnail>Energy_Use_Conservation.png</thumbnail>
+        <file>module4.xml</file>
+    </module>
+    <module>
+        <title>Water and Energy</title>
+        <description>Water is our most vital natural resource and it is impacted every day by energy use. All energy sources are dependent upon water or impact water in some way.</description>
+        <thumbnail>Water_Energy.png</thumbnail>
+        <file>module5.xml</file>
+    </module>
+    <module>
+        <title>Carbon Capture and Storage</title>
+        <description>Carbon is a significant issue in the energy industry. There are two major areas of research in how to manage carbon: the storage of carbon and the use of carbon to create biofuels.</description>
+        <thumbnail>Carbon_Capture_Storage.png</thumbnail>
+        <file>module6.xml</file>
+    </module>
+    <module>
+        <title>Coal Products</title>
+        <description>Beyond energy usage, coal is used in many products that we take for granted in our everyday lives.  Coal ash is a byproduct that can be used in making useful materials rather than generating more waste.</description>
+        <thumbnail>Coal_Products.png</thumbnail>
+        <file>module7.xml</file>
+    </module>
+    <module>
+        <title>About Power UP!</title>
+        <thumbnail>Coal_Products.png</thumbnail>
+        <file>aboutModule.xml</file>
+    </module>
 </modules>

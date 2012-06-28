@@ -7,14 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
 #import "TopAlignedLabel.h"
 
 @interface ModuleViewController : UIViewController <NSCopying> {
     UIWebView       *webContent;
-    TopAlignedLabel *lowerTextContent;
-    TopAlignedLabel *upperTextContent;
+    UITextView *lowerTextContent;
+    UITextView *upperTextContent;
     UIImageView     *lowerTextBG;
     UIImageView     *upperTextBG;
+    UIImageView     *imageContent;
     UIScrollView    *scrollContent;
 
     NSMutableArray *xmlData;
@@ -31,10 +33,11 @@
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *nextButton;
 @property (nonatomic, retain) IBOutlet UIBarButtonItem *homeButton;
 @property (nonatomic, retain) IBOutlet UIWebView *webContent;
-@property (nonatomic, retain) IBOutlet TopAlignedLabel *lowerTextContent;
-@property (nonatomic, retain) IBOutlet TopAlignedLabel *upperTextContent;
+@property (nonatomic, retain) IBOutlet UITextView *lowerTextContent;
+@property (nonatomic, retain) IBOutlet UITextView *upperTextContent;
 @property (nonatomic, retain) IBOutlet UIImageView *lowerTextBG;
 @property (nonatomic, retain) IBOutlet UIImageView *upperTextBG;
+@property (nonatomic, retain) IBOutlet UIImageView *imageContent;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollContent;
 
 - (id)initWithXMLFile:(NSString *)xmlFile;
@@ -44,5 +47,9 @@
 - (IBAction)toPrev:(id)sender;
 - (IBAction)toNext:(id)sender;
 - (IBAction)toHome:(id)sender;
-- (void) loadSub:(int)index;
+- (void)loadSub:(int)index;
+
+- (void)loadVideo:(int)index;
+- (void)loadImage:(int)index;
+- (void)loadRawText:(int)index;
 @end

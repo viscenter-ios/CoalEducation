@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <module>
-    <id>2</id>
-    <title>Energy Sources</title>
+    <id>4</id>
+    <title>Energy Use/Conservation</title>
     <content>
         <contentType>video</contentType>
-        <thumbnail>Energy_Sources.png</thumbnail>
+        <thumbnail>Energy_Use_Conservation.png</thumbnail>
         <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
-        <description>In Kentucky, we use coal for 92% of our energy, but that number is different for every state. Energy can be made from coal, natural gas, oil, hydro and sustainables such as solar, wind or biomass. Each of these energy sources has its own advantages and disadvantages.</description>
+        <description>Energy conservation is a critical part of the conversation about energy. Both on a large scale as well as individual consumers can make a difference in making energy use as efficient as possible.
+        </description>
     </content>
     <content>
         <contentType>image</contentType>

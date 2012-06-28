@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <module>
-    <id>2</id>
-    <title>Energy Sources</title>
+    <id>7</id>
+    <title>Coal Products</title>
     <content>
         <contentType>video</contentType>
-        <thumbnail>Energy_Sources.png</thumbnail>
+        <thumbnail>Coal_Products.png</thumbnail>
         <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
-        <description>In Kentucky, we use coal for 92% of our energy, but that number is different for every state. Energy can be made from coal, natural gas, oil, hydro and sustainables such as solar, wind or biomass. Each of these energy sources has its own advantages and disadvantages.</description>
+        <description>Beyond energy usage, coal is used in many products that we take for granted in our everyday lives.  Coal ash is a byproduct that can be used in making useful materials rather than generating more waste.
+        </description>
     </content>
     <content>
         <contentType>image</contentType>
@@ -28,6 +29,6 @@
             
             Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
             
-        </description>
+            </description>
     </content>
 </module>

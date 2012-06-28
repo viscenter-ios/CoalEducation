@@ -11,7 +11,7 @@
 
 @implementation ModuleViewController
 
-@synthesize webContent, lowerTextContent, upperTextContent, upperTextBG, lowerTextBG, scrollContent, prev, next, prevButton, nextButton, homeButton, toolbar;
+@synthesize webContent, lowerTextContent, upperTextContent, upperTextBG, lowerTextBG, imageContent, scrollContent, prev, next, prevButton, nextButton, homeButton, toolbar;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -170,6 +170,8 @@
                                 CGRectMake(x, y, bWidth, bHeight)];
         [button setImage:[UIImage imageNamed:[[xmlData objectAtIndex:i] objectForKey:@"thumbnail"]]
                 forState:UIControlStateNormal];
+        button.layer.cornerRadius = 10; // this value varies on desired look
+        button.clipsToBounds = YES;
         [button setTag:i];
         [button addTarget:self
                    action:@selector(buttonPressed:)
@@ -206,34 +208,76 @@
     [[self navigationController] popToRootViewControllerAnimated:YES];
 }
 
-- (void) loadSub:(int) index {
+- (void)loadSub:(int) index {
     
     // Retrieve file name
-    NSString *fileName;
-    fileName = [[xmlData objectAtIndex:index] objectForKey:@"htmlFile"];
+    NSString *contentType;
+    contentType = [[xmlData objectAtIndex:index] objectForKey:@"contentType"];
     
-    // Load file with web view
-    if(fileName) {
-        [webContent setHidden:NO];
-        [upperTextContent setHidden:YES];
-        [lowerTextContent setHidden:NO];
-        [upperTextBG setHidden:YES];
-        [lowerTextBG setHidden:NO];
-        [webContent loadRequest:
-         [NSURLRequest requestWithURL:
-          [NSURL fileURLWithPath:
-           [[NSBundle mainBundle] pathForResource:fileName ofType:nil]isDirectory:NO]]];
-        [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
-        
+    // Load proper content from file
+    if([contentType isEqualToString:@"video"]) {
+        [self loadVideo:index];
     }
-    else {
-        [webContent setHidden:YES];
-        [upperTextContent setHidden:NO];
-        [lowerTextContent setHidden:YES];
-        [upperTextBG setHidden:NO];
-        [lowerTextBG setHidden:YES];
-        [upperTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
+    else if([contentType isEqualToString:@"image"]) {
+        [self loadImage:index];
     }
+    else if([contentType isEqualToString:@"text"]) {
+        [self loadRawText:index];
+
+    }
+}
+
+- (void)loadVideo:(int)index {
+    NSString *url = [[NSString alloc] initWithFormat:[[xmlData objectAtIndex:index] objectForKey:@"url"]]; 
+    NSString *embedHTML = [NSString stringWithFormat:@"<html>\
+    <head>\
+    </head>\
+    <body style=\"margin:0\">\
+    <embed id=\"yt\" src=\"%@\"\
+    type=\"application/x-shockwave-flash\" width=768pt height=432pt>\
+    </embed>\
+    </body>\
+    </html>", url];
+    [webContent setHidden:NO];
+    [imageContent setHidden:YES];
+    [webContent setBackgroundColor:[UIColor blackColor]];
+    [upperTextContent setHidden:YES];
+    [lowerTextContent setHidden:NO];
+    lowerTextContent.userInteractionEnabled = NO;
+    [upperTextBG setHidden:YES];
+    [lowerTextBG setHidden:NO];
+    [webContent loadHTMLString:embedHTML baseURL:nil];
+    [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
+    
+    
+}
+
+- (void)loadImage:(int)index {
+    NSString *imageFileName = [[NSString alloc] initWithFormat:[[xmlData objectAtIndex:index] 
+                                                                    objectForKey:@"thumbnail"]]; 
+    [webContent setHidden:YES];
+    [imageContent setHidden:NO];
+    [upperTextContent setHidden:YES];
+    [lowerTextContent setHidden:NO];
+    lowerTextContent.userInteractionEnabled = NO;
+    [upperTextBG setHidden:YES];
+    UIImage *tempImage = [UIImage imageNamed:imageFileName];
+    [imageContent setImage:tempImage];
+    [tempImage release];
+    [lowerTextBG setHidden:NO];
+    [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
+    
+}
+
+- (void)loadRawText:(int)index {
+    [webContent setHidden:YES];
+    [imageContent setHidden:YES];
+    [upperTextContent setHidden:NO];
+    upperTextContent.userInteractionEnabled = NO;
+    [lowerTextContent setHidden:YES];
+    [upperTextBG setHidden:NO];
+    [lowerTextBG setHidden:YES];
+    [upperTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
 }
 
 @end
