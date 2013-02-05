@@ -383,9 +383,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		EF1ED31A14C8981800469D9E /* CoalEd */ = {
+		EF1ED31A14C8981800469D9E /* Power Up! Kentucky */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF1ED33C14C8981800469D9E /* Build configuration list for PBXNativeTarget "CoalEd" */;
+			buildConfigurationList = EF1ED33C14C8981800469D9E /* Build configuration list for PBXNativeTarget "Power Up! Kentucky" */;
 			buildPhases = (
 				EF1ED31714C8981800469D9E /* Sources */,
 				EF1ED31814C8981800469D9E /* Frameworks */,
@@ -395,7 +395,7 @@
 			);
 			dependencies = (
 			);
-			name = CoalEd;
+			name = "Power Up! Kentucky";
 			productName = CoalEd;
 			productReference = EF1ED31B14C8981800469D9E /* Power Up.app */;
 			productType = "com.apple.product-type.application";
@@ -420,7 +420,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EF1ED31A14C8981800469D9E /* CoalEd */,
+				EF1ED31A14C8981800469D9E /* Power Up! Kentucky */,
 			);
 		};
 /* End PBXProject section */
@@ -518,6 +518,45 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		BABBDCA916C19A370083D42F /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Univ. of KY - College of Engr - Vis Center";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5F20BB42-50CD-4380-AB83-DF7D2DB62804";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+			};
+			name = AppStore;
+		};
+		BABBDCAA16C19A370083D42F /* AppStore */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CoalEd/CoalEd-Prefix.pch";
+				HEADER_SEARCH_PATHS = /usr/include/libxml2;
+				INFOPLIST_FILE = "CoalEd/CoalEd-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
+				PRODUCT_NAME = "Power Up! Kentucky";
+				TARGETED_DEVICE_FAMILY = 2;
+				WRAPPER_EXTENSION = app;
+			};
+			name = AppStore;
+		};
 		EF1ED33A14C8981800469D9E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -539,7 +578,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,7 +591,7 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Univ. of KY - College of Engr - Vis Center";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Univ. of KY - College of Engr - Vis Center";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -560,9 +599,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				PROVISIONING_PROFILE = "5F20BB42-50CD-4380-AB83-DF7D2DB62804";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5F20BB42-50CD-4380-AB83-DF7D2DB62804";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = NO;
@@ -573,12 +613,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoalEd/CoalEd-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CoalEd/CoalEd-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = "Power Up";
+				PRODUCT_NAME = "Power Up! Kentucky";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -589,12 +631,14 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
 				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Univ. of KY - College of Engr - Vis Center";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoalEd/CoalEd-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CoalEd/CoalEd-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = "Power Up";
+				PRODUCT_NAME = "Power Up! Kentucky";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "5F20BB42-50CD-4380-AB83-DF7D2DB62804";
 				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
@@ -608,15 +652,17 @@
 			buildConfigurations = (
 				EF1ED33A14C8981800469D9E /* Debug */,
 				EF1ED33B14C8981800469D9E /* Release */,
+				BABBDCA916C19A370083D42F /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF1ED33C14C8981800469D9E /* Build configuration list for PBXNativeTarget "CoalEd" */ = {
+		EF1ED33C14C8981800469D9E /* Build configuration list for PBXNativeTarget "Power Up! Kentucky" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EF1ED33D14C8981800469D9E /* Debug */,
 				EF1ED33E14C8981800469D9E /* Release */,
+				BABBDCAA16C19A370083D42F /* AppStore */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
