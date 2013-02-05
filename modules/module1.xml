@@ -10,7 +10,7 @@
         <contentType>video</contentType>    <!-- This must correspond the appropriate type of content...duh lol -->
         <page>1</page>
         <thumbnail>Energy_101.png</thumbnail>    <!-- ADD THIS STILL FRAME AFTER THE VIDEOS ARE UP ON YOUTUBE -->
-        <url>http://youtu.be/DsT7kqp5jTc</url>  <!-- CHANGE THIS TO THE YOUTUBE URL FOR THE VIDEO -->
+        <url>https://www.youtube.com/v/DsT7kqp5jTc?version=3</url>  <!-- CHANGE THIS TO THE YOUTUBE URL FOR THE VIDEO -->
         <description>Every day each of us use energy to power our daily activities. We often think that our energy usage doesn’t matter, but it really adds up over time. During a typical day a teenager uses energy from the time they get out of bed until they go back to bed. Let’s add up just how much energy we are using every day. </description>  <!-- DONT CHANGE THIS...UNLESS JULIE CHANGES THE DESCRIPTIONS LATER -->
     </content>  <!-- End video content section -->
     <content> <!-- This is a image content section -->

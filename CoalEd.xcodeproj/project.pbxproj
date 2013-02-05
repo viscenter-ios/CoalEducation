@@ -75,8 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		272CDB72155DA19400BE8CBB /* module2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = module2.xml; path = modules/module2.xml; sourceTree = SOURCE_ROOT; };
-		272CDB74155DA80800BE8CBB /* module3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = module3.xml; path = modules/module3.xml; sourceTree = SOURCE_ROOT; };
+		272CDB72155DA19400BE8CBB /* module2.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; name = module2.xml; path = modules/module2.xml; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		272CDB74155DA80800BE8CBB /* module3.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; name = module3.xml; path = modules/module3.xml; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
 		272CDB76155EFEDA00BE8CBB /* TopAlignedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopAlignedLabel.h; sourceTree = "<group>"; };
 		272CDB77155EFEDA00BE8CBB /* TopAlignedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopAlignedLabel.m; sourceTree = "<group>"; };
 		2735AB55151923B700C75361 /* MainViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewCell.xib; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 		27F7F8F714E18BBC00F4AAF8 /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
 		27F7F8F814E18BBC00F4AAF8 /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
 		27F7F8F914E18BBC00F4AAF8 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
-		27F7F90A14E18EBD00F4AAF8 /* module1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = module1.xml; path = modules/module1.xml; sourceTree = SOURCE_ROOT; };
+		27F7F90A14E18EBD00F4AAF8 /* module1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; name = module1.xml; path = modules/module1.xml; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
 		27F7F91D14E1930C00F4AAF8 /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = modules.xml; path = modules/modules.xml; sourceTree = SOURCE_ROOT; };
 		EF1ED31B14C8981800469D9E /* Power Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1ED31F14C8981800469D9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -159,10 +159,10 @@
 		EFA770E215B85F55002758A9 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
 		EFA770E915B864AA002758A9 /* power_up_72x72-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "power_up_72x72-1.png"; sourceTree = "<group>"; };
 		EFA770EB15B86585002758A9 /* power_up_144x144-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "power_up_144x144-2.png"; sourceTree = "<group>"; };
-		EFC288821598BA00007406EC /* module4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = module4.xml; sourceTree = "<group>"; };
-		EFC288841598BA12007406EC /* module5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = module5.xml; sourceTree = "<group>"; };
-		EFC288861598BA1F007406EC /* module6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = module6.xml; sourceTree = "<group>"; };
-		EFC288881598BA30007406EC /* module7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = module7.xml; sourceTree = "<group>"; };
+		EFC288821598BA00007406EC /* module4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = module4.xml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		EFC288841598BA12007406EC /* module5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = module5.xml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		EFC288861598BA1F007406EC /* module6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = module6.xml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
+		EFC288881598BA30007406EC /* module7.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; lineEnding = 0; path = module7.xml; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.xml; };
 		EFC2888A1598C1B1007406EC /* aboutModule.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = aboutModule.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 

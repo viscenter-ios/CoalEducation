@@ -277,9 +277,11 @@
     <head>\
     </head>\
     <body style=\"margin:0\">\
-    <embed id=\"yt\" src=\"%@\" \
-    type=\"application/x-shockwave-flash\" width=768pt height=432pt allowfullscreen=\"false\">\
-    </embed>\
+    <object width=\"768\" height=\"432\">\
+        <param name=\"movie\"></param>\
+        <param name=\"allowScriptAccess\" value=\"always\"></param>\
+        <embed src=\"%@\" type=\"application/x-shockwave-flash\" allowscriptaccess=\"always\" width=\"768\" height=\"432\"></embed>\
+    </object>\
     </body>\
     </html>",url];
      
