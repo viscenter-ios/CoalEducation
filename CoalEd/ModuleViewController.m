@@ -11,7 +11,7 @@
 
 @implementation ModuleViewController
 
-@synthesize webContent, lowerTextContent, upperTextContent, upperTextBG, lowerTextBG, imageContent, scrollContent, prev, next, prevButton, nextButton, homeButton, toolbar;
+@synthesize webContent, lowerTextContent, upperTextContent, upperTextBG, lowerTextBG, imageContent, scrollContent, prev, next, prevButton, nextButton, homeButton, toolbar, thumbView, pageControl;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -21,12 +21,12 @@
     return self;
 }
 
-- (id)initWithXMLFile:(NSString *)xmlFile {
+- (id)initWithXMLFile:(NSString *)xmlFiles {
     self = [super initWithNibName:@"ModuleViewController" bundle:nil];
     prev = nil;
     next = nil;
     if (self) {
-        self->xmlFile = [xmlFile copy];
+        self->xmlFile = [xmlFiles copy];
         moduleId = -1;       
     }
     return self;
@@ -34,7 +34,7 @@
 
 // Change the way copy works
 - (id)copyWithZone:(NSZone *)zone {
-    ModuleViewController *returnObj = [super copyWithZone:zone];
+    ModuleViewController *returnObj = [super init];
     returnObj->xmlFile = [xmlFile copyWithZone:zone];
     returnObj->xmlData = [xmlData copyWithZone:zone];
     
@@ -75,6 +75,10 @@
     
     UIBarButtonItem *spacer1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
     UIBarButtonItem *spacer2 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
+    
+    
+    self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:@"Home" style:UIBarButtonItemStylePlain target:self action:@selector(goHome)];
+    
     // Set up toolbar
     if(!prev && !next)
     {
@@ -94,6 +98,10 @@
     }
 }
 
+- (void)goHome {
+[[self navigationController] popToRootViewControllerAnimated:YES];
+}
+
 
 - (void)viewDidUnload {
     [super viewDidUnload];
@@ -103,7 +111,14 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        NSLog(@"Upside down or Portrait");
+        return  YES;
+    }
+    
+    else {
+        return NO;
+    }
 }
 
 - (void)loadXML {
@@ -148,6 +163,7 @@
 - (void)createContent {
     UIButton *button;
     
+    //768 x 148
     // Calculate the frame of each button and the content size of the
     // scroll view
     int x,
@@ -155,17 +171,15 @@
         bWidth  = 128,
         bHeight = 128,
         xMargin = 40;
+    
     if([xmlData count] <= 1) {
         [scrollContent setHidden:YES];
     }
-    
-    [scrollContent setContentSize:
-     CGSizeMake((bWidth+xMargin)*[xmlData count]+xMargin, bHeight+20)];
-    
+        
     // Create a button for each content item
     for (int i=0; i<[xmlData count]; i++) {
         x = (bWidth+xMargin)*i+xMargin;
-        y = ([scrollContent frame].size.height-bHeight)/2;
+        y = ([thumbView frame].size.height-bHeight)/2;
         button = [[UIButton alloc] initWithFrame:
                                 CGRectMake(x, y, bWidth, bHeight)];
         [button setImage:[UIImage imageNamed:[[xmlData objectAtIndex:i] objectForKey:@"thumbnail"]]
@@ -176,8 +190,13 @@
         [button addTarget:self
                    action:@selector(buttonPressed:)
          forControlEvents:UIControlEventTouchUpInside];
-        [[self scrollContent] addSubview:button];
+
+        [[self thumbView] addSubview:button];
+        
     }
+    
+[thumbView setFrame:CGRectMake([[UIScreen mainScreen] bounds].size.width/2 - 723/2, 694, 768, 500)];
+    
 }
 
 // Perform an action based on the tag of the sender. In this case we will
@@ -189,9 +208,13 @@
 - (IBAction)toPrev:(id)sender {
     if([[[self navigationController] viewControllers] containsObject:prev]) {
         [[self navigationController] popToViewController:prev animated:YES];
+        NSLog(@"Popping");
+        
+
     }
     else {
         [[self navigationController] pushViewController:prev animated:YES];
+        NSLog(@"Pushing");
     }
 }
 
@@ -225,19 +248,43 @@
         [self loadRawText:index];
 
     }
+    
+    else if ([contentType isEqualToString:@"next"]) {
+        [self goToNext:index];
+    }
+    
+}
+
+- (void)goToNext:(int)index {
+    NSString *page;
+    page = [[xmlData objectAtIndex:index] objectForKey:@"page"];
+    
+    if([[[self navigationController] viewControllers] containsObject:next]) {
+        [[self navigationController] popToViewController:next animated:YES];
+    }
+    else {
+        [[self navigationController] pushViewController:next animated:YES];
+        
+        NSLog(@"push");
+    }
+
 }
 
 - (void)loadVideo:(int)index {
     NSString *url = [[NSString alloc] initWithFormat:[[xmlData objectAtIndex:index] objectForKey:@"url"]]; 
+    //NSString *wast = [url stringByAppendingString :@"&autoplay=1"];
     NSString *embedHTML = [NSString stringWithFormat:@"<html>\
     <head>\
     </head>\
     <body style=\"margin:0\">\
-    <embed id=\"yt\" src=\"%@\"\
-    type=\"application/x-shockwave-flash\" width=768pt height=432pt>\
+    <embed id=\"yt\" src=\"%@\" \
+    type=\"application/x-shockwave-flash\" width=768pt height=432pt allowfullscreen=\"false\">\
     </embed>\
     </body>\
-    </html>", url];
+    </html>",url];
+     
+                        
+    
     [webContent setHidden:NO];
     [imageContent setHidden:YES];
     [webContent setBackgroundColor:[UIColor blackColor]];
@@ -247,14 +294,17 @@
     [upperTextBG setHidden:YES];
     [lowerTextBG setHidden:NO];
     [webContent loadHTMLString:embedHTML baseURL:nil];
-    [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
+    [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];  
+    [webContent setAllowsInlineMediaPlayback:NO];
     
-    
+     //width=768pt height=432pt
 }
+
+         
 
 - (void)loadImage:(int)index {
     NSString *imageFileName = [[NSString alloc] initWithFormat:[[xmlData objectAtIndex:index] 
-                                                                    objectForKey:@"thumbnail"]]; 
+                                                                    objectForKey:@"caption_image"]]; 
     [webContent setHidden:YES];
     [imageContent setHidden:NO];
     [upperTextContent setHidden:YES];
@@ -263,13 +313,12 @@
     [upperTextBG setHidden:YES];
     UIImage *tempImage = [UIImage imageNamed:imageFileName];
     [imageContent setImage:tempImage];
-    [tempImage release];
     [lowerTextBG setHidden:NO];
-    [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
-    
+    [lowerTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];    
 }
 
 - (void)loadRawText:(int)index {
+    NSString *xmlTitle = [[xmlData objectAtIndex:index] objectForKey:@"title"];
     [webContent setHidden:YES];
     [imageContent setHidden:YES];
     [upperTextContent setHidden:NO];
@@ -278,6 +327,26 @@
     [upperTextBG setHidden:NO];
     [lowerTextBG setHidden:YES];
     [upperTextContent setText:[[xmlData objectAtIndex:index] objectForKey:@"description"]];
+    
+    if ([xmlTitle isEqualToString:@"About"]) {
+        NSString *imageFileName = [[xmlData objectAtIndex:index] objectForKey:@"caption_image"];
+        UIImage *tempImage = [UIImage imageNamed:imageFileName];
+        [imageContent setHidden:NO];
+        [imageContent setImage:tempImage];
+        imageContent.frame = CGRectMake(30, 230+35, 700, 660);
+        //upperTextBG.frame = CGRectMake(0, 4, 768, 350);
+        //UIImage *bgImage = [UIImage imageNamed:@"TEXT_Background350.png"];
+        //[upperTextBG setImage:bgImage];
+        NSLog(@"Showing Image");
+    }
+    
+    else {
+        [imageContent setHidden:YES];
+        NSLog(@"Not about page");
+    
+    }
+    
+
 }
 
 @end

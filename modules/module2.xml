@@ -3,31 +3,56 @@
     <id>2</id>
     <title>Energy Sources</title>
     <content>
+        <page>2</page>
         <contentType>video</contentType>
         <thumbnail>Energy_Sources.png</thumbnail>
-        <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
+        <url>http://youtu.be/bRt2vJEFZAU</url>
         <description>In Kentucky, we use coal for 92% of our energy, but that number is different for every state. Energy can be made from coal, natural gas, oil, hydro and sustainables such as solar, wind or biomass. Each of these energy sources has its own advantages and disadvantages.</description>
     </content>
     <content>
         <contentType>image</contentType>
-        <thumbnail>image.png</thumbnail>
-        <description>This is a default image. Boo yah!</description>
+        <thumbnail>Photos.png</thumbnail>
+        <caption_image>Energy Sources image-1.jpg</caption_image>
+        <description>Energy surrounds us – it comes from the sun, the wind, and even the movement of water.  We can harness these alternative sources of energy to conserve our nonrenewable fossil fuel reserves. </description>
     </content>
     <content>
         <contentType>text</contentType>
-        <thumbnail>text.gif</thumbnail>
-        <description>   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+        <thumbnail>More_Info.png</thumbnail>
+        <description> 
+            Energy Sources
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            Energy can take the form of electricity, transportation fuels (cars, trucks, airplanes)
+            and heating fuels to name a few. Where does energy come from?
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            Historically, the use of fossil fuels and petroleum date back to 3000 B.C. For
+            example, Persian chemists invented modern day napalm by mixing petroleum
+            with quicklime called “Greek Fire”. Coal goes back even further into history. “Coal,
+            scientists believe, was used sporadically by cave people”. Native Americans used
+            coal to bake clay pottery. Coal and petroleum both saw major inclines in usage
+            many years later during the “Industrial Age”. The invention of the Steam-Engine
+            demanded large amounts of coal that pioneers in early stages of America began
+            to mine. Today, coal is mined in tons of loads across America in states such as
+            Montana, West Virginia, and Kentucky.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            Today more energy sources are being used and developed. Hydroelectric, solar,
+            wind and nuclear are some of the most popular. However, each of these sources
+            have their own downside. Nuclear power has suffered from some major disasters.
+            Hydroelectric power isn’t as reliable as desired mostly because of our nation’s
+            geography. The most efficient hydro generators are located on rivers that are on
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            steeper declines. The faster and larger the flow, the better the energy source. Solar
+            power, similarly, are best in locations of flat and hot lands like deserts. The largest
+            location of solar panels in America are in the Mojave Desert. Wind Power is best in
+            the Mid-West. Indiana, Iowa, Missouri, and the Dakotas.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-            
-        </description>
+            Continuing to develop energy sources will be crucial both to our country and the
+            world in the next decades.
+            </description>
     </content>
+    
+    <content>
+        <contentType>next</contentType>
+        <thumbnail>next.png</thumbnail>
+    </content>
+    
 </module>

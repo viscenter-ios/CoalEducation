@@ -3,31 +3,47 @@
     <id>5</id>
     <title>Water/Energy</title>
     <content>
+        <page>5</page>
         <contentType>video</contentType>
         <thumbnail>Water_Energy.png</thumbnail>
-        <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
+        <url>http://youtu.be/V8Bhg1CsoEA</url>
         <description>Water is our most vital natural resource and it is impacted every day by energy use. All energy sources are dependent upon water or impact water in some way.</description>
     </content>
     <content>
         <contentType>image</contentType>
-        <thumbnail>image.png</thumbnail>
-        <description>This is a default image. Boo yah!</description>
+        <thumbnail>Photos.png</thumbnail>
+        <caption_image>water and energy image.jpg</caption_image>
+        <description>We need water for almost any form of energy production, not just for hydroelectric power.  In nuclear and coal-fired power plants, water cools the machinery.  Protecting our water from pollution is key.  
+        </description>
     </content>
     <content>
         <contentType>text</contentType>
-        <thumbnail>text.gif</thumbnail>
-        <description>   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+        <thumbnail>More_Info.png</thumbnail>
+        <description>
+            Water and Energy
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            Most people think of heat and power when they think about energy, but did you
+            know that almost all energy sources are dependent upon water or impact water in
+            some way? Think about the impact on water supply from energy use:
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            •   Water used in extraction, refining, processing and transporting
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            •   Used directly in hydroelectric generation
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            •   Used in cooling/emissions scrubbing in thermoelectric
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            •   Thermoelectric uses almost as much water as electric
             
+            •   When temperatures rise and people use more electricity for AC,
+                hydroelectric dams use more water
         </description>
-    </content>
+        
+      
+        
+    </content> 
+    
+    <content>
+            <contentType>next</contentType>
+            <thumbnail>next.png</thumbnail>
+        </content>
 </module>

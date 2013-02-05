@@ -52,9 +52,21 @@
 		EF1ED32C14C8981800469D9E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1ED32B14C8981800469D9E /* main.m */; };
 		EF1ED33014C8981800469D9E /* CoalEdAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1ED32F14C8981800469D9E /* CoalEdAppDelegate.m */; };
 		EF1ED33914C8981800469D9E /* SplashViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF1ED33814C8981800469D9E /* SplashViewController.m */; };
-		EF581C82159CE4D1000CEDCA /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = EF581C81159CE4D1000CEDCA /* image.png */; };
-		EF581C85159CE609000CEDCA /* text.gif in Resources */ = {isa = PBXBuildFile; fileRef = EF581C84159CE608000CEDCA /* text.gif */; };
+		EF5954B815B452CD0060F3E9 /* Energy 101 image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5954B715B452CD0060F3E9 /* Energy 101 image.jpg */; };
+		EF5954BA15B452E40060F3E9 /* water and energy image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5954B915B452E40060F3E9 /* water and energy image.jpg */; };
+		EF5954BC15B452F10060F3E9 /* Rock to Electron image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5954BB15B452F10060F3E9 /* Rock to Electron image.jpg */; };
+		EF5954BE15B453150060F3E9 /* Carbon Capture, Storage and...Biomass image 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5954BD15B453150060F3E9 /* Carbon Capture, Storage and...Biomass image 2.jpg */; };
+		EF5954C015B453310060F3E9 /* Coal Products v3 image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5954BF15B453310060F3E9 /* Coal Products v3 image.jpg */; };
+		EF5954C215B45A660060F3E9 /* Energy Sources image-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5954C115B45A660060F3E9 /* Energy Sources image-1.jpg */; };
+		EF5954C415B45B290060F3E9 /* Energy Use and Conservation image-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EF5954C315B45B290060F3E9 /* Energy Use and Conservation image-1.jpg */; };
+		EF5954C715B47ABE0060F3E9 /* More_Info.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5954C515B47ABD0060F3E9 /* More_Info.png */; };
+		EF5954C815B47ABE0060F3E9 /* Photos.png in Resources */ = {isa = PBXBuildFile; fileRef = EF5954C615B47ABD0060F3E9 /* Photos.png */; };
 		EF813F461562D83100E1D70C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = EF813F451562D83100E1D70C /* Default.png */; };
+		EFA770DA15B73DEF002758A9 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EFA770D915B73DEF002758A9 /* MediaPlayer.framework */; };
+		EFA770DD15B8549B002758A9 /* Energy_Collage.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA770DC15B8549B002758A9 /* Energy_Collage.png */; };
+		EFA770E315B85F55002758A9 /* next.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA770E215B85F55002758A9 /* next.png */; };
+		EFA770EA15B864AA002758A9 /* power_up_72x72-1.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA770E915B864AA002758A9 /* power_up_72x72-1.png */; };
+		EFA770EC15B86585002758A9 /* power_up_144x144-2.png in Resources */ = {isa = PBXBuildFile; fileRef = EFA770EB15B86585002758A9 /* power_up_144x144-2.png */; };
 		EFC288831598BA00007406EC /* module4.xml in Resources */ = {isa = PBXBuildFile; fileRef = EFC288821598BA00007406EC /* module4.xml */; };
 		EFC288851598BA12007406EC /* module5.xml in Resources */ = {isa = PBXBuildFile; fileRef = EFC288841598BA12007406EC /* module5.xml */; };
 		EFC288871598BA1F007406EC /* module6.xml in Resources */ = {isa = PBXBuildFile; fileRef = EFC288861598BA1F007406EC /* module6.xml */; };
@@ -120,7 +132,7 @@
 		27F7F8F914E18BBC00F4AAF8 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
 		27F7F90A14E18EBD00F4AAF8 /* module1.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = module1.xml; path = modules/module1.xml; sourceTree = SOURCE_ROOT; };
 		27F7F91D14E1930C00F4AAF8 /* modules.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = modules.xml; path = modules/modules.xml; sourceTree = SOURCE_ROOT; };
-		EF1ED31B14C8981800469D9E /* CoalEd.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoalEd.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF1ED31B14C8981800469D9E /* Power Up.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Up.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF1ED31F14C8981800469D9E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		EF1ED32114C8981800469D9E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EF1ED32314C8981800469D9E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,9 +144,21 @@
 		EF1ED32F14C8981800469D9E /* CoalEdAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoalEdAppDelegate.m; sourceTree = "<group>"; };
 		EF1ED33714C8981800469D9E /* SplashViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplashViewController.h; sourceTree = "<group>"; };
 		EF1ED33814C8981800469D9E /* SplashViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SplashViewController.m; sourceTree = "<group>"; };
-		EF581C81159CE4D1000CEDCA /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		EF581C84159CE608000CEDCA /* text.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = text.gif; sourceTree = "<group>"; };
+		EF5954B715B452CD0060F3E9 /* Energy 101 image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Energy 101 image.jpg"; sourceTree = "<group>"; };
+		EF5954B915B452E40060F3E9 /* water and energy image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "water and energy image.jpg"; sourceTree = "<group>"; };
+		EF5954BB15B452F10060F3E9 /* Rock to Electron image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Rock to Electron image.jpg"; sourceTree = "<group>"; };
+		EF5954BD15B453150060F3E9 /* Carbon Capture, Storage and...Biomass image 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Carbon Capture, Storage and...Biomass image 2.jpg"; sourceTree = "<group>"; };
+		EF5954BF15B453310060F3E9 /* Coal Products v3 image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Coal Products v3 image.jpg"; sourceTree = "<group>"; };
+		EF5954C115B45A660060F3E9 /* Energy Sources image-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Energy Sources image-1.jpg"; sourceTree = "<group>"; };
+		EF5954C315B45B290060F3E9 /* Energy Use and Conservation image-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Energy Use and Conservation image-1.jpg"; sourceTree = "<group>"; };
+		EF5954C515B47ABD0060F3E9 /* More_Info.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = More_Info.png; sourceTree = "<group>"; };
+		EF5954C615B47ABD0060F3E9 /* Photos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Photos.png; sourceTree = "<group>"; };
 		EF813F451562D83100E1D70C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		EFA770D915B73DEF002758A9 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		EFA770DC15B8549B002758A9 /* Energy_Collage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Energy_Collage.png; sourceTree = "<group>"; };
+		EFA770E215B85F55002758A9 /* next.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = next.png; sourceTree = "<group>"; };
+		EFA770E915B864AA002758A9 /* power_up_72x72-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "power_up_72x72-1.png"; sourceTree = "<group>"; };
+		EFA770EB15B86585002758A9 /* power_up_144x144-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "power_up_144x144-2.png"; sourceTree = "<group>"; };
 		EFC288821598BA00007406EC /* module4.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = module4.xml; sourceTree = "<group>"; };
 		EFC288841598BA12007406EC /* module5.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = module5.xml; sourceTree = "<group>"; };
 		EFC288861598BA1F007406EC /* module6.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = module6.xml; sourceTree = "<group>"; };
@@ -150,6 +174,7 @@
 				EF1ED32014C8981800469D9E /* UIKit.framework in Frameworks */,
 				EF1ED32214C8981800469D9E /* Foundation.framework in Frameworks */,
 				EF1ED32414C8981800469D9E /* CoreGraphics.framework in Frameworks */,
+				EFA770DA15B73DEF002758A9 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +184,7 @@
 		27A12F1F153DD60500BE5B8B /* images */ = {
 			isa = PBXGroup;
 			children = (
+				EF5954B515B452A80060F3E9 /* pictures */,
 				EF581C86159CE6F6000CEDCA /* backgrounds */,
 				27A12F25153DD73C00BE5B8B /* icons */,
 				27F7F90E14E18F9000F4AAF8 /* thumbs */,
@@ -249,8 +275,9 @@
 		27F7F90E14E18F9000F4AAF8 /* thumbs */ = {
 			isa = PBXGroup;
 			children = (
-				EF581C84159CE608000CEDCA /* text.gif */,
-				EF581C81159CE4D1000CEDCA /* image.png */,
+				EFA770E215B85F55002758A9 /* next.png */,
+				EF5954C515B47ABD0060F3E9 /* More_Info.png */,
+				EF5954C615B47ABD0060F3E9 /* Photos.png */,
 			);
 			name = thumbs;
 			sourceTree = "<group>";
@@ -258,6 +285,8 @@
 		EF1ED31014C8981800469D9E = {
 			isa = PBXGroup;
 			children = (
+				EFA770EB15B86585002758A9 /* power_up_144x144-2.png */,
+				EFA770E915B864AA002758A9 /* power_up_72x72-1.png */,
 				27F7F8DC14E18BBC00F4AAF8 /* TouchXML */,
 				EF1ED32514C8981800469D9E /* CoalEd */,
 				EF1ED31E14C8981800469D9E /* Frameworks */,
@@ -268,7 +297,7 @@
 		EF1ED31C14C8981800469D9E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				EF1ED31B14C8981800469D9E /* CoalEd.app */,
+				EF1ED31B14C8981800469D9E /* Power Up.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -276,6 +305,7 @@
 		EF1ED31E14C8981800469D9E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EFA770D915B73DEF002758A9 /* MediaPlayer.framework */,
 				EF1ED31F14C8981800469D9E /* UIKit.framework */,
 				EF1ED32114C8981800469D9E /* Foundation.framework */,
 				EF1ED32314C8981800469D9E /* CoreGraphics.framework */,
@@ -335,6 +365,21 @@
 			name = backgrounds;
 			sourceTree = "<group>";
 		};
+		EF5954B515B452A80060F3E9 /* pictures */ = {
+			isa = PBXGroup;
+			children = (
+				EFA770DC15B8549B002758A9 /* Energy_Collage.png */,
+				EF5954C315B45B290060F3E9 /* Energy Use and Conservation image-1.jpg */,
+				EF5954C115B45A660060F3E9 /* Energy Sources image-1.jpg */,
+				EF5954BF15B453310060F3E9 /* Coal Products v3 image.jpg */,
+				EF5954BD15B453150060F3E9 /* Carbon Capture, Storage and...Biomass image 2.jpg */,
+				EF5954BB15B452F10060F3E9 /* Rock to Electron image.jpg */,
+				EF5954B915B452E40060F3E9 /* water and energy image.jpg */,
+				EF5954B715B452CD0060F3E9 /* Energy 101 image.jpg */,
+			);
+			name = pictures;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -352,7 +397,7 @@
 			);
 			name = CoalEd;
 			productName = CoalEd;
-			productReference = EF1ED31B14C8981800469D9E /* CoalEd.app */;
+			productReference = EF1ED31B14C8981800469D9E /* Power Up.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -412,8 +457,19 @@
 				EFC288871598BA1F007406EC /* module6.xml in Resources */,
 				EFC288891598BA30007406EC /* module7.xml in Resources */,
 				EFC2888B1598C1B2007406EC /* aboutModule.xml in Resources */,
-				EF581C82159CE4D1000CEDCA /* image.png in Resources */,
-				EF581C85159CE609000CEDCA /* text.gif in Resources */,
+				EF5954B815B452CD0060F3E9 /* Energy 101 image.jpg in Resources */,
+				EF5954BA15B452E40060F3E9 /* water and energy image.jpg in Resources */,
+				EF5954BC15B452F10060F3E9 /* Rock to Electron image.jpg in Resources */,
+				EF5954BE15B453150060F3E9 /* Carbon Capture, Storage and...Biomass image 2.jpg in Resources */,
+				EF5954C015B453310060F3E9 /* Coal Products v3 image.jpg in Resources */,
+				EF5954C215B45A660060F3E9 /* Energy Sources image-1.jpg in Resources */,
+				EF5954C415B45B290060F3E9 /* Energy Use and Conservation image-1.jpg in Resources */,
+				EF5954C715B47ABE0060F3E9 /* More_Info.png in Resources */,
+				EF5954C815B47ABE0060F3E9 /* Photos.png in Resources */,
+				EFA770DD15B8549B002758A9 /* Energy_Collage.png in Resources */,
+				EFA770E315B85F55002758A9 /* next.png in Resources */,
+				EFA770EA15B864AA002758A9 /* power_up_72x72-1.png in Resources */,
+				EFA770EC15B86585002758A9 /* power_up_144x144-2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,7 +524,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Univ. of KY - College of Engr - Vis Center";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -483,6 +540,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -494,7 +552,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CLANG_ENABLE_OBJC_ARC = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Univ. of KY - College of Engr - Vis Center";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
@@ -503,9 +562,10 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -518,7 +578,8 @@
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CoalEd/CoalEd-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = CoalEd;
+				PRODUCT_NAME = "Power Up";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -527,12 +588,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = NO;
+				"CODE_SIGN_ENTITLEMENTS[sdk=iphoneos*]" = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CoalEd/CoalEd-Prefix.pch";
 				HEADER_SEARCH_PATHS = /usr/include/libxml2;
 				INFOPLIST_FILE = "CoalEd/CoalEd-Info.plist";
 				OTHER_LDFLAGS = "-lxml2";
-				PRODUCT_NAME = CoalEd;
+				PRODUCT_NAME = "Power Up";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

@@ -10,6 +10,7 @@
 #import <QuartzCore/QuartzCore.h>
 #import "TopAlignedLabel.h"
 
+
 @interface ModuleViewController : UIViewController <NSCopying> {
     UIWebView       *webContent;
     UITextView *lowerTextContent;
@@ -18,6 +19,7 @@
     UIImageView     *upperTextBG;
     UIImageView     *imageContent;
     UIScrollView    *scrollContent;
+    UIView          *thumbView;
 
     NSMutableArray *xmlData;
     NSMutableArray *content;
@@ -39,6 +41,8 @@
 @property (nonatomic, retain) IBOutlet UIImageView *upperTextBG;
 @property (nonatomic, retain) IBOutlet UIImageView *imageContent;
 @property (nonatomic, retain) IBOutlet UIScrollView *scrollContent;
+@property (nonatomic, retain) IBOutlet UIView *thumbView;
+@property (nonatomic, retain) IBOutlet UIPageControl *pageControl;
 
 - (id)initWithXMLFile:(NSString *)xmlFile;
 - (void)loadXML;

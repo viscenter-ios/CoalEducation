@@ -3,32 +3,44 @@
     <id>4</id>
     <title>Energy Use/Conservation</title>
     <content>
+        <page>4</page>
         <contentType>video</contentType>
         <thumbnail>Energy_Use_Conservation.png</thumbnail>
-        <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
+        <url>http://youtu.be/7P8ckZIzVZQ</url>
         <description>Energy conservation is a critical part of the conversation about energy. Both on a large scale as well as individual consumers can make a difference in making energy use as efficient as possible.
         </description>
     </content>
     <content>
         <contentType>image</contentType>
-        <thumbnail>image.png</thumbnail>
-        <description>This is a default image. Boo yah!</description>
+        <thumbnail>Photos.png</thumbnail>
+        <caption_image>Energy Use and Conservation image-1.jpg</caption_image>
+        <description>90% of an incandescent light bulb's energy goes into heat produciton. A compact fluorescent light bulub (CFL) like the one shown above, is much more efficient.</description>
     </content>
     <content>
         <contentType>text</contentType>
-        <thumbnail>text.gif</thumbnail>
-        <description>   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+        <thumbnail>More_Info.png</thumbnail>
+        <description> 
+            Energy Use and Conservation
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            One of the best ways to keep energy costs low and to maintain the inventory
+            of current fossil fuel resources is to use energy more effectively with smart
+            conservation in mind. On a larger, collective level, the government and energy
+            companies need to take steps to encourage more conservation and to leverage all
+            technical tools to make energy usage as efficient as possible. The implementation of
+            a "smart grid" would help to make this possible
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-            
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-            
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-            
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            On a personal level, we all have a responsibility to use energy resources wisely.
+            What can you do? Turn EVERYTHING OFF when not in use; go LCD not plasma;
+            efficient windows capture heat better and the list goes on and on.
             
         </description>
-    </content>
+        
+       
+        
+    </content> 
+    
+    <content>
+            <contentType>next</contentType>
+            <thumbnail>next.png</thumbnail>
+        </content>
 </module>

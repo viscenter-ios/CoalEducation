@@ -3,31 +3,60 @@
     <id>3</id>
     <title>Rock to Electron</title>
     <content>
+        <page>3</page>
         <contentType>video</contentType>
         <thumbnail>Rock_to_Electron.png</thumbnail>
-        <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
-        <description>How does a piece of coal become electricity. From the mining, processing, transportation to burning at a power plant, we follow the rock as it becomes a kilowatt.</description>
+        <url>http://youtu.be/XwQHfIfS9dM</url>
+        <description>How does a piece of coal become electricity? From the mining, processing, transportation to burning at a power plant, we follow the rock as it becomes a kilowatt.</description>
     </content>
     <content>
         <contentType>image</contentType>
-        <thumbnail>image.png</thumbnail>
-        <description>This is a default image. Boo yah!</description>
+        <thumbnail>Photos.png</thumbnail>
+        <caption_image>Rock to Electron image.jpg</caption_image>
+        <description>Over 90% of energy in Kentucky comes from coal. How is it possible this rock charges our computers, runs our washing machines, and keeps our lights on? </description>
     </content>
     <content>
         <contentType>text</contentType>
-        <thumbnail>text.gif</thumbnail>
-        <description>   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+        <thumbnail>More_Info.png</thumbnail>
+        <description>  
+            Rock to Electron
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            Can you believe we can get kilowatts from rocks!! A power plant generates
+            electricity from a black rock named coal. But how does that process work?
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            The coal first is mined, prepared and then transported to a power plant. Once it
+            arrives at the power plant the coal-fired units produce electricity by burning coal in
+            a boiler to heat water to produce steam. The steam, at tremendous pressure, flows
+            into a turbine, which spins a generator to produce electricity. The steam is cooled,
+            condensed back into water, and returned to the boiler to start the process over.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            For example, the coal-fired boilers at TVA’s Kingston Fossil Plant near Knoxville,
+            Tennessee, heat water to about 1,000 degrees Fahrenheit (540 degrees Celsius) to
+            create steam. The steam is piped to the turbines at pressures of more than 1,800
+            pounds per square inch (130 kilograms per square centimeter). The turbines are
+            connected to the generators and spin them at 3600 revolutions per minute to make
+            alternating current electricity at 20,000 volts. River water is pumped through
+            tubes in a condenser to cool and condense the steam coming out of the turbines.
+            -The Kingston plant generates about 10 billion kilowatt-hours a year, or enough
+            electricity to supply 700,000 homes. To meet this demand, Kingston burns about
+            14,000 tons of coal a day, an amount that would fill 140 railroad cars.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-            
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            Getting electricity from power generating stations to our homes and workplaces is
+            quite a challenging process. Electricity must be produced at the same time as it is
+            used because large quantities of electricity cannot be stored effectively. High-voltage
+            transmission lines (those lines between tall metal towers that you often see along
+            the highway) are used to carry electricity from power generating stations to the
+            places where it is needed. However, when electricity flows over these lines, some of
+            it is lost. One of the properties of high voltage lines is that the higher the voltage, the
+            more efficient they are at transmitting electricity — that is, the lower the losses are.
+            Using transformers, high-voltage electricity is "stepped-down" several times to a
+            lower voltage before arriving over the distribution system of utility poles and wires
+            to your home.
             
         </description>
+    </content>
+    <content>
+        <contentType>next</contentType>
+        <thumbnail>next.png</thumbnail>
     </content>
 </module>

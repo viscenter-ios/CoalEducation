@@ -3,31 +3,54 @@
     <id>6</id>
     <title>Carbon Capture and Storage</title>
     <content>
+        <page>6</page>
         <contentType>video</contentType>
         <thumbnail>Carbon_Capture_Storage.png</thumbnail>
-        <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>
+        <url>http://youtu.be/FrpJBrHMZXs</url>
         <description>Carbon is a significant issue in the energy industry. There are two major areas of research in how to manage carbon: the storage of carbon and the use of carbon to create biofuels.</description>
     </content>
     <content>
         <contentType>image</contentType>
-        <thumbnail>image.png</thumbnail>
-        <description>This is a default image. Boo yah!</description>
+        <thumbnail>Photos.png</thumbnail>
+        <caption_image>Carbon Capture, Storage and...Biomass image 2.jpg</caption_image>
+        <description>Researchers at the University of Kentucky experiment with growing biomass to reduce CO2 emissions from burning coal.  Exposing algae to CO2 and sunlight causes the algae population to explode.</description>
     </content>
     <content>
         <contentType>text</contentType>
-        <thumbnail>text.gif</thumbnail>
-        <description>   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+        <thumbnail>More_Info.png</thumbnail>
+        <description>
+            Carbon Capture and Storage
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            The most obvious constraint on carbon emissions arises from climate change.
+            Burning fossil fuels accounts for about three-fourths of the anthropogenic carbon
+            dioxide emitted in the US. While all fossil fuels contain carbon, coal is the most
+            carbon-intensive, putting coal at a disadvantage in a carbon-controlled world.
+            Because electricity generation is the single largest contributor to carbon emissions
+            and over half of the electricity generated in the US is from coal, there is a pressing
+            need to develop viable carbon-control technologies, which can be implemented in a
+            practical and affordable manner.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            There are three ways to reduce carbon emissions from electricity generation. The
+            first and best method is to use energy more efficiently to reduce our needs from
+            fossil fuel combustion. Another way is to increase our supply from renewable, low-
+            carbon, and carbon-free energy. The third is to separate, capture and securely store
+            carbon dioxide (i.e., carbon sequestration).
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            Biomass can be converted by thermal or biological routes into various forms of
+            energy including process heat, steam, motive power, and electricity, as well as liquid
+            fuels, chemicals and synthesis gas. However, biomass feedstocks have economic
+            deficiencies that we must overcome if they are to be viable. The low density and
+            high water content of biomass makes shipping costs prohibitive in many cases, yet
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-            
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            most subsequent refining processes require centralized facilities, where large-scale
+            operations greatly increase process efficiencies.
             
         </description>
     </content>
+    
+    <content>
+        <contentType>next</contentType>
+        <thumbnail>next.png</thumbnail>
+    </content>
+
 </module>

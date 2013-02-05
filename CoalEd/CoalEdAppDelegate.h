@@ -11,6 +11,7 @@
 
 @interface CoalEdAppDelegate : UIResponder <UIApplicationDelegate> {
     UINavigationController *naviController;
+    UIBarButtonItem *home;
 }
 @property (strong, nonatomic) IBOutlet UIWindow *window;
 @property (nonatomic, retain) UINavigationController *naviController;

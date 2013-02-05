@@ -33,7 +33,9 @@
     [[naviController navigationBar] setTintColor:[UIColor colorWithRed:8.0/255.0 green:83.0/255.0 blue:165.0/255.0 alpha:1.0]];
   	[[naviController toolbar] setTintColor:[UIColor blueColor]];
     [naviController setToolbarHidden:YES];
+        
 }
+            
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

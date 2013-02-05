@@ -14,7 +14,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
-               BuildableName = "CoalEd.app"
+               BuildableName = "Power Up.app"
                BlueprintName = "CoalEd"
                ReferencedContainer = "container:CoalEd.xcodeproj">
             </BuildableReference>
@@ -32,7 +32,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
-            BuildableName = "CoalEd.app"
+            BuildableName = "Power Up.app"
             BlueprintName = "CoalEd"
             ReferencedContainer = "container:CoalEd.xcodeproj">
          </BuildableReference>
@@ -51,7 +51,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
-            BuildableName = "CoalEd.app"
+            BuildableName = "Power Up.app"
             BlueprintName = "CoalEd"
             ReferencedContainer = "container:CoalEd.xcodeproj">
          </BuildableReference>
@@ -69,7 +69,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "EF1ED31A14C8981800469D9E"
-            BuildableName = "CoalEd.app"
+            BuildableName = "Power Up.app"
             BlueprintName = "CoalEd"
             ReferencedContainer = "container:CoalEd.xcodeproj">
          </BuildableReference>
@@ -80,6 +80,7 @@
    </AnalyzeAction>
    <ArchiveAction
       buildConfiguration = "Release"
+      customArchiveName = "Power Up"
       revealArchiveInOrganizer = "YES">
    </ArchiveAction>
 </Scheme>

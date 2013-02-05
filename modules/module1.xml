@@ -8,30 +8,52 @@
     <!-- Each piece of content associated with a module must have its own content section like the one below. -->
     <content>   <!-- This is a video content section -->
         <contentType>video</contentType>    <!-- This must correspond the appropriate type of content...duh lol -->
+        <page>1</page>
         <thumbnail>Energy_101.png</thumbnail>    <!-- ADD THIS STILL FRAME AFTER THE VIDEOS ARE UP ON YOUTUBE -->
-        <url>http://www.youtube.com/watch?v=2U2jBiIbQoM</url>  <!-- CHANGE THIS TO THE YOUTUBE URL FOR THE VIDEO -->
-        <description>Everyday each of us use energy to power our daily activities. We often think that our energy usage doesn’t matter, but it really adds up over time. During a typical day a teenager uses energy from the time they get out of bed until they go back to bed. Let’s add up just how much energy we are using every day. </description>  <!-- DONT CHANGE THIS...UNLESS JULIE CHANGES THE DESCRIPTIONS LATER -->
+        <url>http://youtu.be/DsT7kqp5jTc</url>  <!-- CHANGE THIS TO THE YOUTUBE URL FOR THE VIDEO -->
+        <description>Every day each of us use energy to power our daily activities. We often think that our energy usage doesn’t matter, but it really adds up over time. During a typical day a teenager uses energy from the time they get out of bed until they go back to bed. Let’s add up just how much energy we are using every day. </description>  <!-- DONT CHANGE THIS...UNLESS JULIE CHANGES THE DESCRIPTIONS LATER -->
     </content>  <!-- End video content section -->
     <content> <!-- This is a image content section -->
         <contentType>image</contentType>
-        <thumbnail>image.png</thumbnail> <!--CHANGE THIS TO THE APPROPRIATE IMAGE FILE NAME -->
-        <description>This is a default image. Boo yah!</description> <!-- This one should be obvious haha -->
+        <thumbnail>Photos.png</thumbnail>
+        <caption_image>Energy 101 image.jpg</caption_image>
+    <!--CHANGE THIS TO THE APPROPRIATE IMAGE FILE NAME -->
+        <description>Adding up all the energy you use in a day produces a shocking figure.  As energy use rises, energy supplies fall.  We must conserve resources like coal for the future. </description> <!-- This one should be obvious haha -->
     </content> <!-- End image content section -->
     <content> <!-- This is a raw text content section...I'm not even going to bother with explaing it. -->
         <contentType>text</contentType>
-        <thumbnail>text.gif</thumbnail>
-        <description>   Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+        <thumbnail>More_Info.png</thumbnail>
+        <description> 
+            Energy 101
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            We are all incredibly dependent upon energy; we use a lot of it. People don't think
+            their personal energy use matters, but does it? How much energy (electric watts)
+            do you use in your morning routine before going to school or work? Did you use
+            an alarm clock, take a hot shower, use a hair dryer, eat breakfast using a toaster or
+            microwave or coffee maker? If so, then you consumed several watts of electricity
+            (energy) while doing those simple tasks.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            In Kentucky we use a lot of energy in part due to the historically low cost of coal
+            generated power.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
+            •   Kentuckians use 55% more electricity than the national average, 3 rd highest
+                in energy intensity
+            •   Kentucky schools use 7% more electricity per student than the national
+                average
+            •   State Residential electricity costs have increased 30% more since 2006
+            •   Statewide energy demand has increased 2.3% each year. That is twice the
+                national average
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
             
-            Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.
-            
-        </description>
+            The discussion of energy usage is at the forefront of political and social discussions
+            both in our state around the world. The decisions we make today concerning
+            energy sources and use will have a big impact on our future.
+            </description>
     </content>
+    
+    <content>
+        <contentType>next</contentType>
+        <thumbnail>next.png</thumbnail>
+    </content>
+    
 </module>

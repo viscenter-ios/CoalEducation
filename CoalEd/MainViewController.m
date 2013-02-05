@@ -72,8 +72,13 @@
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+    if (interfaceOrientation == UIInterfaceOrientationPortrait || interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown) {
+        return YES;
+    }// Return YES for supported orientations
+    
+    else {
+        return NO;
+    }
 }
 
 // loadModules function that takes a string (XMLFilePath) as a parameter and
